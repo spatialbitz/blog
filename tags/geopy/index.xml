@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Geopy on Spatialbits </title>
+    <link>http://localhost:1313/tags/geopy/</link>
+    <description>Recent content in Geopy on Spatialbits </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 02 Nov 2014 13:00:38 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/geopy/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>What3Words geocoder for geopy</title>
+      <link>http://localhost:1313/post/what3words-geocoder-for-geopy/</link>
+      <pubDate>Sun, 02 Nov 2014 13:00:38 +0200</pubDate>
+      
+      <guid>http://localhost:1313/post/what3words-geocoder-for-geopy/</guid>
+      <description>&lt;p&gt;&lt;em&gt;What3Words&lt;/em&gt; is an innovative, plain simple and multilingual addressing scheme:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;w3w is a giant grid of the world made up of 57 trillion squares of 3 metres x 3 metres.
+Each square has been given a 3 word address comprised of 3 words from the dictionary. An example of a w3w address is &lt;strong&gt;gazed.across.like&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/squares-graphic.png&#34; alt=&#34;image not found&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;(source: &lt;a href=&#34;http://what3words.com/about&#34;&gt;What3Words&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;I recently added a &lt;em&gt;What3Words&lt;/em&gt; geocoder to the &lt;a href=&#34;https://github.com/spatialbitz/geopy&#34;&gt;geopy&lt;/a&gt; package.&lt;/p&gt;
+
+&lt;p&gt;So now its possible to geocode and reverse geocode &lt;em&gt;What3Words&lt;/em&gt; from python, as shown in this example:&lt;/p&gt;
+
+&lt;script src=&#34;https://gist.github.com/spatialbitz/c265b6788433b52c3b13.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;Languages currently supported by the service are: DE, EN, ES, FR, PT, RU, SV, TR.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;[Edit: 2014-12-10]&lt;/strong&gt;
+ **My pull request has been accepted and the what3words geocoder became part of &lt;a href=&#34;https://github.com/geopy/geopy&#34;&gt;geopy 1.5.0&lt;/a&gt;!  **&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Geocoding with python and OSM</title>
+      <link>http://localhost:1313/post/geocoding-with-python-and-OSM/</link>
+      <pubDate>Mon, 22 Sep 2014 13:00:38 +0200</pubDate>
+      
+      <guid>http://localhost:1313/post/geocoding-with-python-and-OSM/</guid>
+      <description>&lt;p&gt;Geocoding is the process of relating implicit location information (such as an address or a the name of a river) to explicit location information in form of geographic coordinates.&lt;/p&gt;
+
+&lt;p&gt;Several companies, e.g. &lt;a href=&#34;https://developers.google.com/maps/documentation/geocoding/&#34;&gt;Google&lt;/a&gt; and &lt;a href=&#34;https://developer.here.com/geocoder&#34;&gt;Nokia/HERE&lt;/a&gt; offer commercial geocoding services/APIs. &lt;a href=&#34;http://wiki.openstreetmap.org/wiki/Nominatim&#34;&gt;Nominatim&lt;/a&gt; i&lt;em&gt;s a tool to search OSM data by name and address and to generate synthetic addresses of OSM points&lt;/em&gt; and hence a geocoder operating on the OSM database.
+ While many geocoders offer easy to use APIs that can be directly utilized from a web browser, they unfold their full potential when called from e.g. a script enabling batch geocoding for many place names at once.
+&lt;a href=&#34;https://github.com/geopy/geopy&#34;&gt;geopy&lt;/a&gt; is a geocoding toolbox for Python, offering access to numerous geocoding services.&lt;/p&gt;
+
+&lt;p&gt;Here is an example of geocoding with Nominatim:&lt;/p&gt;
+
+&lt;script src=&#34;https://gist.github.com/spatialbitz/bb07486888688f8058cd.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;which returns several dicts like:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;{u&#39;display_name&#39;: u&#39;Elbe, Landkreis Wittenberg, Sachsen-Anhalt, Deutschland, European Union&#39;, u&#39;importance&#39;: 0.72552692721096, u&#39;place_id&#39;: u&#39;9208507982&#39;, u&#39;lon&#39;: u&#39;12.5663365&#39;, u&#39;lat&#39;: u&#39;51.867922&#39;, u&#39;osm_type&#39;: u&#39;relation&#39;, u&#39;licence&#39;: u&#39;Data \xa9 OpenStreetMap contributors, ODbL 1.0\. http://www.openstreetmap.org/copyright&#39;, u&#39;osm_id&#39;: u&#39;123822&#39;, u&#39;boundingbox&#39;: [u&#39;50.0168724060059&#39;, u&#39;54.0075302124023&#39;, u&#39;8.22170829772949&#39;, u&#39;15.9315462112427&#39;], u&#39;type&#39;: u&#39;river&#39;, u&#39;class&#39;: u&#39;waterway&#39;}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Among other details these contain lat/lon coordinates and the boudning box of the feature. But wouldn&amp;rsquo;t it be nice if the result would contain the full geometry as well? Well, while this is supported by the Nominatim API it was not - until recently - by the geopy toolbox. I &lt;a href=&#34;https://github.com/spatialbitz/geopy&#34;&gt;added&lt;/a&gt; support for exactly that, so now:&lt;/p&gt;
+
+&lt;script src=&#34;https://gist.github.com/spatialbitz/85476473a8bff1197a81.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;leads to:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;MULTILINESTRING((15.53613 50.7756972,15.5364593 50.7755378,15.5367906 50.7754773,15.5372784 50.7754914,15.5378943 50.7752649,15.5382691 50.7752837,15.5384418 50.7752514,15.5388037 [...])) 
+LINESTRING(7.0094126 51.1325696,7.0093372 51.1324799,7.009245 51.1323739,7.0091836 51.1322698,7.0090853 51.1321503,7.0090361 51.1320982,7.0089716 51.1319945 7.0085078 51.1314622 [...])&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;so the full geometries are returned.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;EDIT (2014-09-23):&lt;/strong&gt;
+ &lt;del&gt;(Note: Currently this is implemented in my &lt;a href=&#34;https://github.com/spatialbitz/geopy&#34;&gt;github-fork&lt;/a&gt;, it should appear in the &lt;a href=&#34;https://github.com/geopy/geopy&#34;&gt;official repo&lt;/a&gt; eventually. A pull request is pending.)&lt;/del&gt;
+ The pull request has been accepted and so the functionality is now available in the &lt;a href=&#34;https://github.com/geopy/geopy&#34;&gt;official repo&lt;/a&gt; (release 1.3.0).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;EDIT (2014-10-18):&lt;/strong&gt;
+ Please make sure to respect &lt;a href=&#34;http://wiki.openstreetmap.org/wiki/Nominatim_usage_policy&#34;&gt;Nominatim&amp;rsquo;s usage policy!&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

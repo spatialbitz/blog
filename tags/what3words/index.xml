@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>What3words on Spatialbits </title>
+    <link>http://localhost:1313/tags/what3words/</link>
+    <description>Recent content in What3words on Spatialbits </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 22 Jul 2015 13:00:38 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/what3words/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>what3words addresses for OSM buildings</title>
+      <link>http://localhost:1313/post/what3words-addresses-for-OSM-buildings/</link>
+      <pubDate>Wed, 22 Jul 2015 13:00:38 +0200</pubDate>
+      
+      <guid>http://localhost:1313/post/what3words-addresses-for-OSM-buildings/</guid>
+      <description>&lt;p&gt;A while ago I &lt;a href=&#34;http://localhost:1313/post/assigning-what3words-addresses-to-OSM-building&#34;&gt;experimented&lt;/a&gt; with assigning multilingual &lt;em&gt;what3words&lt;/em&gt; addresses to OpenStreetMap buildings in Sierra Leone.
+ I basically downloaded the OSM data, derived the buildings and their centroids and published a map based on CartoDB. Upon a click the what3words-API was queried for the addresses in multiple languages.&lt;/p&gt;
+
+&lt;p&gt;There are some obvious disadvantages to this approach.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;it operates on a static database - hence updates in the OSM database are not taken into account.&lt;/li&gt;
+&lt;li&gt;it doesn&amp;rsquo;t scale very well. According to &lt;a href=&#34;http://taginfo.openstreetmap.org/keys/building&#34;&gt;taginfo&lt;/a&gt; there are currently &amp;gt; 157.000.000 buildings in the OSM database.&lt;/li&gt;
+&lt;li&gt;A user would only want to query a few buildings of particular interest.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So here is a new approach, which makes it possible to easily find what3words addresses for all OSM buildings:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://spatialbitz.github.io/w3w4osm/&#34;&gt;https://spatialbitz.github.io/w3w4osm/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Just click on any building in the map and afterwards on the red dot, marking the center of the geometry. You can also search for a place/address of interest.&lt;/p&gt;
+
+&lt;iframe src=&#34;http://spatialbitz.github.io/w3w4osm/index.html&#34; height=&#34;600&#34; width=&#34;800&#34;&gt;&lt;p&gt; Unfortunately the iframe doesn&#39;t load in your browser. You can open the map in a &lt;a href=&#34;https://spatialbitz.github.io/w3w4osm/&#34;&gt;new window&lt;/a&gt;. &lt;/p&gt;&lt;/iframe&gt; 
+
+&lt;p&gt;Ideas/things to improve:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;advanced geocoding functionality&lt;/li&gt;
+&lt;li&gt;what3words geocoding support&lt;/li&gt;
+&lt;li&gt;support for all what3words-languages&lt;/li&gt;
+&lt;li&gt;API-error handling &amp;amp; notifications&lt;/li&gt;
+&lt;li&gt;fine-tune the overpass-API calls (feature types, bbox)&lt;/li&gt;
+&lt;li&gt;improve design&lt;/li&gt;
+&lt;li&gt;&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I&amp;rsquo;d be happy to accept pull-request, go ahead and fork the project on &lt;a href=&#34;https://github.com/spatialbitz/w3w4osm&#34;&gt;github&lt;/a&gt;!
+ Also I&amp;rsquo;d love to hear feedback regarding the usefulness of this approach and/or real world applications using OSM data with what3words addresses.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Assigning what3words addresses to OSM buildings</title>
+      <link>http://localhost:1313/post/assigning-what3words-addresses-to-OSM-building/</link>
+      <pubDate>Tue, 16 Dec 2014 13:00:38 +0200</pubDate>
+      
+      <guid>http://localhost:1313/post/assigning-what3words-addresses-to-OSM-building/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://what3words.com/&#34;&gt;What3Words&lt;/a&gt; offers multilingual and memorizable addresses for 3x3 meter grid cells on the entire globe (more on this in an earlier &lt;a href=&#34;http://localhost:1313/post/what3words-geocoder-for-geopy&#34;&gt;post&lt;/a&gt;). So with w3w it becomes possible to assign addresses e.g. to buildings even in countries without functioning traditional addressing schemes.&lt;/p&gt;
+
+&lt;p&gt;As a demo I assigned addresses to buildings in Sierra Leone, as available in the  &lt;a href=&#34;http://www.openstreetmap.org/#map=8/8.381/-11.886&#34;&gt;OpenStreetMap&lt;/a&gt; database &lt;span style=&#34;font-size: xx-small;&#34;&gt;(open in &lt;a href=&#34;http://cdn.rawgit.com/spatialbitz/6f73b48c953d3f29bde7/raw/6093045ceeba26cd26de5ec441bad0cfe1cc06d2/gistfile1.html&#34;&gt;new window&lt;/a&gt;)&lt;/span&gt;:&lt;/p&gt;
+
+&lt;iframe src=&#34;http://cdn.rawgit.com/spatialbitz/6f73b48c953d3f29bde7/raw/6093045ceeba26cd26de5ec441bad0cfe1cc06d2/gistfile1.html&#34; height=&#34;600&#34; width=&#34;800&#34;&gt;&lt;p&gt; Unfortunately the iframe doesn&#39;t load in your browser. You can open the map in a &lt;a href=&#34;http://cdn.rawgit.com/spatialbitz/6f73b48c953d3f29bde7/raw/6093045ceeba26cd26de5ec441bad0cfe1cc06d2/gistfile1.html&#34;&gt;new window&lt;/a&gt;. &lt;/p&gt;&lt;/iframe&gt; 
+
+&lt;p&gt;For this example I downloaded the OSM data from &lt;a href=&#34;http://www.geofabrik.de/&#34;&gt;Geofabrik&lt;/a&gt;, loaded the buildings (&amp;gt; 420.000) into a postgreSQL database and derived the centroid for each polygon. The centroids&amp;rsquo; lat/lon coordinates are used to query the what3words API in order to receive the w3w in different languages.
+ (Alternatively of course it would be possible to receive the center points of the buildings on the fly e.g. from the overpass API).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What3Words geocoder for geopy</title>
+      <link>http://localhost:1313/post/what3words-geocoder-for-geopy/</link>
+      <pubDate>Sun, 02 Nov 2014 13:00:38 +0200</pubDate>
+      
+      <guid>http://localhost:1313/post/what3words-geocoder-for-geopy/</guid>
+      <description>&lt;p&gt;&lt;em&gt;What3Words&lt;/em&gt; is an innovative, plain simple and multilingual addressing scheme:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;w3w is a giant grid of the world made up of 57 trillion squares of 3 metres x 3 metres.
+Each square has been given a 3 word address comprised of 3 words from the dictionary. An example of a w3w address is &lt;strong&gt;gazed.across.like&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/squares-graphic.png&#34; alt=&#34;image not found&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;(source: &lt;a href=&#34;http://what3words.com/about&#34;&gt;What3Words&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;I recently added a &lt;em&gt;What3Words&lt;/em&gt; geocoder to the &lt;a href=&#34;https://github.com/spatialbitz/geopy&#34;&gt;geopy&lt;/a&gt; package.&lt;/p&gt;
+
+&lt;p&gt;So now its possible to geocode and reverse geocode &lt;em&gt;What3Words&lt;/em&gt; from python, as shown in this example:&lt;/p&gt;
+
+&lt;script src=&#34;https://gist.github.com/spatialbitz/c265b6788433b52c3b13.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;Languages currently supported by the service are: DE, EN, ES, FR, PT, RU, SV, TR.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;[Edit: 2014-12-10]&lt;/strong&gt;
+ **My pull request has been accepted and the what3words geocoder became part of &lt;a href=&#34;https://github.com/geopy/geopy&#34;&gt;geopy 1.5.0&lt;/a&gt;!  **&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

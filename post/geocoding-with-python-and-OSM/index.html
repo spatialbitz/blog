@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Geocoding with python and OSM -- Spatialbits </title>
+
+    
+
+    
+    <link href="http://localhost:1313//css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link href="http://localhost:1313//css/clean-blog.min.css" rel="stylesheet">
+
+    
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    
+    
+    
+
+</head>
+
+<body>
+
+    
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://localhost:1313/">Spatialbits </a>
+            </div>
+
+                       
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li>
+                        <a href="http://localhost:1313/">home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://localhost:1313/post/">Archives</a>
+                    </li>
+                    
+                  </ul>
+            </div>
+           
+
+        </div>
+        
+    </nav>
+
+
+    
+    
+    <header class="intro-header" style="background-image: url('http://localhost:1313//img/post-bg.jpg')">
+    
+      <div class="container">
+        <div class="row">
+           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+             <div class="post-heading">
+               <h1>Geocoding With Python And OSM</h1>
+               <h2 class="subheading"></h2>
+               <span class="meta">Posted by <a href="#">Martin Seiler</a> on Mon, Sep 22, 2014
+                 <br />
+                 In <a href="http://localhost:1313/categories/gi" >GI</a>, <a href="http://localhost:1313/categories/osm" >OSM</a>, 
+
+                 <br />
+                 Tags <a href="http://localhost:1313/tags/geocoding" >geocoding</a> <a href="http://localhost:1313/tags/python" >python</a> <a href="http://localhost:1313/tags/geopy" >geopy</a> 
+
+               </span>
+             </div>
+           </div>
+        </div>
+      </div>
+    </header>
+
+    
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <p>Geocoding is the process of relating implicit location information (such as an address or a the name of a river) to explicit location information in form of geographic coordinates.</p>
+
+<p>Several companies, e.g. <a href="https://developers.google.com/maps/documentation/geocoding/">Google</a> and <a href="https://developer.here.com/geocoder">Nokia/HERE</a> offer commercial geocoding services/APIs. <a href="http://wiki.openstreetmap.org/wiki/Nominatim">Nominatim</a> i<em>s a tool to search OSM data by name and address and to generate synthetic addresses of OSM points</em> and hence a geocoder operating on the OSM database.
+ While many geocoders offer easy to use APIs that can be directly utilized from a web browser, they unfold their full potential when called from e.g. a script enabling batch geocoding for many place names at once.
+<a href="https://github.com/geopy/geopy">geopy</a> is a geocoding toolbox for Python, offering access to numerous geocoding services.</p>
+
+<p>Here is an example of geocoding with Nominatim:</p>
+
+<script src="https://gist.github.com/spatialbitz/bb07486888688f8058cd.js"></script>
+
+<p>which returns several dicts like:</p>
+
+<p><code>{u'display_name': u'Elbe, Landkreis Wittenberg, Sachsen-Anhalt, Deutschland, European Union', u'importance': 0.72552692721096, u'place_id': u'9208507982', u'lon': u'12.5663365', u'lat': u'51.867922', u'osm_type': u'relation', u'licence': u'Data \xa9 OpenStreetMap contributors, ODbL 1.0\. http://www.openstreetmap.org/copyright', u'osm_id': u'123822', u'boundingbox': [u'50.0168724060059', u'54.0075302124023', u'8.22170829772949', u'15.9315462112427'], u'type': u'river', u'class': u'waterway'}</code></p>
+
+<p>Among other details these contain lat/lon coordinates and the boudning box of the feature. But wouldn&rsquo;t it be nice if the result would contain the full geometry as well? Well, while this is supported by the Nominatim API it was not - until recently - by the geopy toolbox. I <a href="https://github.com/spatialbitz/geopy">added</a> support for exactly that, so now:</p>
+
+<script src="https://gist.github.com/spatialbitz/85476473a8bff1197a81.js"></script>
+
+<p>leads to:</p>
+
+<p><code>MULTILINESTRING((15.53613 50.7756972,15.5364593 50.7755378,15.5367906 50.7754773,15.5372784 50.7754914,15.5378943 50.7752649,15.5382691 50.7752837,15.5384418 50.7752514,15.5388037 [...])) 
+LINESTRING(7.0094126 51.1325696,7.0093372 51.1324799,7.009245 51.1323739,7.0091836 51.1322698,7.0090853 51.1321503,7.0090361 51.1320982,7.0089716 51.1319945 7.0085078 51.1314622 [...])</code></p>
+
+<p>so the full geometries are returned.</p>
+
+<p><strong>EDIT (2014-09-23):</strong>
+ <del>(Note: Currently this is implemented in my <a href="https://github.com/spatialbitz/geopy">github-fork</a>, it should appear in the <a href="https://github.com/geopy/geopy">official repo</a> eventually. A pull request is pending.)</del>
+ The pull request has been accepted and so the functionality is now available in the <a href="https://github.com/geopy/geopy">official repo</a> (release 1.3.0).</p>
+
+<p><strong>EDIT (2014-10-18):</strong>
+ Please make sure to respect <a href="http://wiki.openstreetmap.org/wiki/Nominatim_usage_policy">Nominatim&rsquo;s usage policy!</a></p>
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <ul class="list-inline text-center">
+                    <li>
+                      <a href="mailto:spatialbits@posteo.net">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://twitter.com/spatialbits">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://github.com/spatialbitz">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                  </ul>
+                  <p class="copyright text-muted"></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="http://localhost:1313//js/jquery.min.js"></script>
+
+    
+    <script src="http://localhost:1313//js/bootstrap.min.js"></script>
+
+    
+    <script src="http://localhost:1313//js/clean-blog.js"></script>
+
+    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'XX-00000000-0', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+<script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+
+</html>
+

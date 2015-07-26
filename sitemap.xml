@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2015-07-22T13:00:38+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/what3words-addresses-for-OSM-buildings/</loc>
+    <lastmod>2015-07-22T13:00:38+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/text-mining-the-geospatial-world-forum-contributions/</loc>
+    <lastmod>2015-05-22T13:00:38+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/topographische-karten-und-das-urheberrecht/</loc>
+    <lastmod>2015-03-01T13:00:38+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/assigning-what3words-addresses-to-OSM-building/</loc>
+    <lastmod>2014-12-16T13:00:38+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/what3words-geocoder-for-geopy/</loc>
+    <lastmod>2014-11-02T13:00:38+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/geocoding-with-python-and-OSM/</loc>
+    <lastmod>2014-09-22T13:00:38+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/vizualizing-osm-data-w-cartodb/</loc>
+    <lastmod>2014-09-06T13:00:38+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/inspire2014/</loc>
+    <lastmod>2014-06-17T13:00:38+02:00</lastmod>
+  </url>
+  
+</urlset>

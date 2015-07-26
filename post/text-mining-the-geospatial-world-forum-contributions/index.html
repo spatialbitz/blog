@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Text Mining the Geospatial World Forum Contributions -- Spatialbits </title>
+
+    
+
+    
+    <link href="http://localhost:1313//css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link href="http://localhost:1313//css/clean-blog.min.css" rel="stylesheet">
+
+    
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    
+    
+    
+
+</head>
+
+<body>
+
+    
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://localhost:1313/">Spatialbits </a>
+            </div>
+
+                       
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li>
+                        <a href="http://localhost:1313/">home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://localhost:1313/post/">Archives</a>
+                    </li>
+                    
+                  </ul>
+            </div>
+           
+
+        </div>
+        
+    </nav>
+
+
+    
+    
+    <header class="intro-header" style="background-image: url('http://localhost:1313//img/post-bg.jpg')">
+    
+      <div class="container">
+        <div class="row">
+           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+             <div class="post-heading">
+               <h1>Text Mining The Geospatial World Forum Contributions</h1>
+               <h2 class="subheading"></h2>
+               <span class="meta">Posted by <a href="#">Martin Seiler</a> on Fri, May 22, 2015
+                 <br />
+                 In <a href="http://localhost:1313/categories/gi" >GI</a>, <a href="http://localhost:1313/categories/data-science" >Data Science</a>, 
+
+                 <br />
+                 Tags <a href="http://localhost:1313/tags/inspire" >inspire</a> <a href="http://localhost:1313/tags/gwf" >gwf</a> <a href="http://localhost:1313/tags/text-minig" >text minig</a> 
+
+               </span>
+             </div>
+           </div>
+        </div>
+      </div>
+    </header>
+
+    
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <p>This year the INSPIRE conference is organized as a joint event with the <a href="http://www.geospatialworldforum.org/">Geospatial World Forum</a> in Lisbon.</p>
+
+<p>As <a href="http://localhost:1313/post/inspire2014">last year</a> I did some text mining on the conference abstracts to get a feeling on this years&rsquo; hot topics and to help me identify sessions/presentations that are particularly interesting.</p>
+
+<p>Here are the frequently used terms (&gt; 65):</p>
+
+<p><img src="http://localhost:1313/img/tf2015.png" alt="image not found" />
+</p>
+
+<p>And this table shows how terms are correlated with the term &ldquo;INSPIRE&rdquo;:</p>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th>inspire</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>implement</td>
+<td>0.59</td>
+</tr>
+
+<tr>
+<td>theme</td>
+<td>0.56</td>
+</tr>
+
+<tr>
+<td>direct</td>
+<td>0.55</td>
+</tr>
+
+<tr>
+<td><span style="color: red;">concern</span></td>
+<td>0.46</td>
+</tr>
+
+<tr>
+<td>data</td>
+<td>0.46</td>
+</tr>
+
+<tr>
+<td>present</td>
+<td>0.44</td>
+</tr>
+
+<tr>
+<td>follow</td>
+<td>0.43</td>
+</tr>
+
+<tr>
+<td>example</td>
+<td>0.42</td>
+</tr>
+
+<tr>
+<td>main</td>
+<td>0.42</td>
+</tr>
+
+<tr>
+<td>concrete</td>
+<td>0.41</td>
+</tr>
+
+<tr>
+<td>least</td>
+<td>0.41</td>
+</tr>
+
+<tr>
+<td>native</td>
+<td>0.41</td>
+</tr>
+
+<tr>
+<td>quite</td>
+<td>0.41</td>
+</tr>
+
+<tr>
+<td>exchange</td>
+<td>0.40</td>
+</tr>
+
+<tr>
+<td>provide</td>
+<td>0.40</td>
+</tr>
+
+<tr>
+<td>report</td>
+<td>0.40</td>
+</tr>
+
+<tr>
+<td>conceptual</td>
+<td>0.39</td>
+</tr>
+
+<tr>
+<td>specify</td>
+<td>0.39</td>
+</tr>
+
+<tr>
+<td>transform</td>
+<td>0.39</td>
+</tr>
+
+<tr>
+<td>approach</td>
+<td>0.38</td>
+</tr>
+
+<tr>
+<td>framework</td>
+<td>0.38</td>
+</tr>
+
+<tr>
+<td>implies</td>
+<td>0.38</td>
+</tr>
+
+<tr>
+<td>carried</td>
+<td>0.37</td>
+</tr>
+
+<tr>
+<td>attribute</td>
+<td>0.36</td>
+</tr>
+
+<tr>
+<td>dataset</td>
+<td>0.36</td>
+</tr>
+
+<tr>
+<td>organic</td>
+<td>0.36</td>
+</tr>
+
+<tr>
+<td>practice</td>
+<td>0.36</td>
+</tr>
+
+<tr>
+<td>structure</td>
+<td>0.36</td>
+</tr>
+
+<tr>
+<td>assess</td>
+<td>0.35</td>
+</tr>
+
+<tr>
+<td>december</td>
+<td>0.35</td>
+</tr>
+
+<tr>
+<td>double</td>
+<td>0.35</td>
+</tr>
+
+<tr>
+<td>gml</td>
+<td>0.35</td>
+</tr>
+
+<tr>
+<td>later</td>
+<td>0.35</td>
+</tr>
+
+<tr>
+<td>light</td>
+<td>0.35</td>
+</tr>
+
+<tr>
+<td>mandate</td>
+<td>0.35</td>
+</tr>
+
+<tr>
+<td>non</td>
+<td>0.35</td>
+</tr>
+
+<tr>
+<td>nuts</td>
+<td>0.35</td>
+</tr>
+
+<tr>
+<td>occurred</td>
+<td>0.35</td>
+</tr>
+
+<tr>
+<td>reaction</td>
+<td>0.35</td>
+</tr>
+
+<tr>
+<td>theyre</td>
+<td>0.35</td>
+</tr>
+
+<tr>
+<td>unknown</td>
+<td>0.35</td>
+</tr>
+
+<tr>
+<td>users</td>
+<td>0.35</td>
+</tr>
+
+<tr>
+<td>weeks</td>
+<td>0.35</td>
+</tr>
+
+<tr>
+<td>feedback</td>
+<td>0.34</td>
+</tr>
+
+<tr>
+<td>ign</td>
+<td>0.34</td>
+</tr>
+
+<tr>
+<td>sheets</td>
+<td>0.34</td>
+</tr>
+
+<tr>
+<td>user</td>
+<td>0.34</td>
+</tr>
+
+<tr>
+<td>benefit</td>
+<td>0.33</td>
+</tr>
+
+<tr>
+<td>given</td>
+<td>0.33</td>
+</tr>
+
+<tr>
+<td>thematic</td>
+<td>0.33</td>
+</tr>
+
+<tr>
+<td>addition</td>
+<td>0.32</td>
+</tr>
+
+<tr>
+<td>advice</td>
+<td>0.32</td>
+</tr>
+
+<tr>
+<td>annex</td>
+<td>0.32</td>
+</tr>
+
+<tr>
+<td>annextopic</td>
+<td>0.32</td>
+</tr>
+
+<tr>
+<td>annum</td>
+<td>0.32</td>
+</tr>
+
+<tr>
+<td>ascribe</td>
+<td>0.32</td>
+</tr>
+
+<tr>
+<td>categories</td>
+<td>0.32</td>
+</tr>
+
+<tr>
+<td>cumulative</td>
+<td>0.32</td>
+</tr>
+
+<tr>
+<td>discover</td>
+<td>0.32</td>
+</tr>
+
+<tr>
+<td>ecflood</td>
+<td>0.32</td>
+</tr>
+
+<tr>
+<td>enable</td>
+<td>0.32</td>
+</tr>
+
+<tr>
+<td>frd</td>
+<td>0.32</td>
+</tr>
+
+<tr>
+<td>generic</td>
+<td>0.32</td>
+</tr>
+
+<tr>
+<td>hydrographic</td>
+<td>0.32</td>
+</tr>
+
+<tr>
+<td>incompatible</td>
+<td>0.32</td>
+</tr>
+
+<tr>
+<td>kingdom</td>
+<td>0.32</td>
+</tr>
+
+<tr>
+<td>littleno</td>
+<td>0.32</td>
+</tr>
+
+<tr>
+<td>materialise</td>
+<td>0.32</td>
+</tr>
+
+<tr>
+<td>merges</td>
+<td>0.32</td>
+</tr>
+
+<tr>
+<td>nonoperable</td>
+<td>0.32</td>
+</tr>
+
+<tr>
+<td>obvious</td>
+<td>0.32</td>
+</tr>
+
+<tr>
+<td>outweigh</td>
+<td>0.32</td>
+</tr>
+
+<tr>
+<td>pool</td>
+<td>0.32</td>
+</tr>
+
+<tr>
+<td>pragmatic</td>
+<td>0.32</td>
+</tr>
+
+<tr>
+<td>returns</td>
+<td>0.32</td>
+</tr>
+
+<tr>
+<td>schema</td>
+<td>0.32</td>
+</tr>
+
+<tr>
+<td>society</td>
+<td>0.32</td>
+</tr>
+
+<tr>
+<td>subjectspecific</td>
+<td>0.32</td>
+</tr>
+
+<tr>
+<td>tangible</td>
+<td>0.32</td>
+</tr>
+
+<tr>
+<td>thats</td>
+<td>0.32</td>
+</tr>
+
+<tr>
+<td>triennial</td>
+<td>0.32</td>
+</tr>
+
+<tr>
+<td>tune</td>
+<td>0.32</td>
+</tr>
+
+<tr>
+<td>unstructured</td>
+<td>0.32</td>
+</tr>
+
+<tr>
+<td>wfd</td>
+<td>0.32</td>
+</tr>
+
+<tr>
+<td>wfdflood</td>
+<td>0.32</td>
+</tr>
+
+<tr>
+<td>wfdfrd</td>
+<td>0.32</td>
+</tr>
+
+<tr>
+<td>yield</td>
+<td>0.32</td>
+</tr>
+
+<tr>
+<td>available</td>
+<td>0.31</td>
+</tr>
+
+<tr>
+<td>compliant</td>
+<td>0.31</td>
+</tr>
+
+<tr>
+<td>environment</td>
+<td>0.31</td>
+</tr>
+
+<tr>
+<td>exploit</td>
+<td>0.31</td>
+</tr>
+
+<tr>
+<td>include</td>
+<td>0.31</td>
+</tr>
+
+<tr>
+<td>service</td>
+<td>0.31</td>
+</tr>
+
+<tr>
+<td>accompanied</td>
+<td>0.30</td>
+</tr>
+
+<tr>
+<td>download</td>
+<td>0.30</td>
+</tr>
+
+<tr>
+<td>experience</td>
+<td>0.30</td>
+</tr>
+
+<tr>
+<td>final</td>
+<td>0.30</td>
+</tr>
+
+<tr>
+<td>inpsire</td>
+<td>0.30</td>
+</tr>
+
+<tr>
+<td>realise</td>
+<td>0.30</td>
+</tr>
+
+<tr>
+<td>wfs</td>
+<td>0.30</td>
+</tr>
+
+<tr>
+<td>aggregate</td>
+<td>0.29</td>
+</tr>
+
+<tr>
+<td>expected</td>
+<td>0.29</td>
+</tr>
+
+<tr>
+<td>feature</td>
+<td>0.29</td>
+</tr>
+
+<tr>
+<td>incremental</td>
+<td>0.29</td>
+</tr>
+
+<tr>
+<td>indirect</td>
+<td>0.29</td>
+</tr>
+
+<tr>
+<td>member</td>
+<td>0.29</td>
+</tr>
+
+<tr>
+<td>mif</td>
+<td>0.29</td>
+</tr>
+
+<tr>
+<td>might</td>
+<td>0.29</td>
+</tr>
+
+<tr>
+<td>network</td>
+<td>0.29</td>
+</tr>
+
+<tr>
+<td>optimum</td>
+<td>0.29</td>
+</tr>
+
+<tr>
+<td>overdetection</td>
+<td>0.29</td>
+</tr>
+
+<tr>
+<td>perhaps</td>
+<td>0.29</td>
+</tr>
+
+<tr>
+<td>persistent</td>
+<td>0.29</td>
+</tr>
+
+<tr>
+<td>railwayline</td>
+<td>0.29</td>
+</tr>
+
+<tr>
+<td>splits</td>
+<td>0.29</td>
+</tr>
+
+<tr>
+<td>transportnetwork</td>
+<td>0.29</td>
+</tr>
+
+<tr>
+<td>underdetection</td>
+<td>0.29</td>
+</tr>
+
+<tr>
+<td>view</td>
+<td>0.29</td>
+</tr>
+
+<tr>
+<td>work</td>
+<td>0.29</td>
+</tr>
+
+<tr>
+<td>aim</td>
+<td>0.28</td>
+</tr>
+
+<tr>
+<td>arise</td>
+<td>0.28</td>
+</tr>
+
+<tr>
+<td>concept</td>
+<td>0.28</td>
+</tr>
+
+<tr>
+<td>deal</td>
+<td>0.28</td>
+</tr>
+
+<tr>
+<td>document</td>
+<td>0.28</td>
+</tr>
+
+<tr>
+<td>file</td>
+<td>0.28</td>
+</tr>
+
+<tr>
+<td>net</td>
+<td>0.28</td>
+</tr>
+
+<tr>
+<td>possible</td>
+<td>0.28</td>
+</tr>
+
+<tr>
+<td>temporal</td>
+<td>0.28</td>
+</tr>
+
+<tr>
+<td>test</td>
+<td>0.28</td>
+</tr>
+
+<tr>
+<td>annual</td>
+<td>0.27</td>
+</tr>
+
+<tr>
+<td>consider</td>
+<td>0.27</td>
+</tr>
+
+<tr>
+<td>correspond</td>
+<td>0.27</td>
+</tr>
+
+<tr>
+<td>french</td>
+<td>0.27</td>
+</tr>
+
+<tr>
+<td>geometric</td>
+<td>0.27</td>
+</tr>
+
+<tr>
+<td>maintenance</td>
+<td>0.27</td>
+</tr>
+
+<tr>
+<td>principle</td>
+<td>0.27</td>
+</tr>
+
+<tr>
+<td>rule</td>
+<td>0.27</td>
+</tr>
+
+<tr>
+<td>year</td>
+<td>0.27</td>
+</tr>
+
+<tr>
+<td>according</td>
+<td>0.26</td>
+</tr>
+
+<tr>
+<td>around</td>
+<td>0.26</td>
+</tr>
+
+<tr>
+<td>best</td>
+<td>0.26</td>
+</tr>
+
+<tr>
+<td>centralised</td>
+<td>0.26</td>
+</tr>
+
+<tr>
+<td>conclude</td>
+<td>0.26</td>
+</tr>
+
+<tr>
+<td>disseminate</td>
+<td>0.26</td>
+</tr>
+
+<tr>
+<td>drains</td>
+<td>0.26</td>
+</tr>
+
+<tr>
+<td>european</td>
+<td>0.26</td>
+</tr>
+
+<tr>
+<td>forecast</td>
+<td>0.26</td>
+</tr>
+
+<tr>
+<td>geosmartcity</td>
+<td>0.26</td>
+</tr>
+
+<tr>
+<td>idena</td>
+<td>0.26</td>
+</tr>
+
+<tr>
+<td>impact</td>
+<td>0.26</td>
+</tr>
+
+<tr>
+<td>issue</td>
+<td>0.26</td>
+</tr>
+
+<tr>
+<td>nation</td>
+<td>0.26</td>
+</tr>
+
+<tr>
+<td>navarre</td>
+<td>0.26</td>
+</tr>
+
+<tr>
+<td>new</td>
+<td>0.26</td>
+</tr>
+
+<tr>
+<td>part</td>
+<td>0.26</td>
+</tr>
+
+<tr>
+<td>priori</td>
+<td>0.26</td>
+</tr>
+
+<tr>
+<td>propose</td>
+<td>0.26</td>
+</tr>
+
+<tr>
+<td>recommend</td>
+<td>0.26</td>
+</tr>
+
+<tr>
+<td>reinforce</td>
+<td>0.26</td>
+</tr>
+
+<tr>
+<td>reservoir</td>
+<td>0.26</td>
+</tr>
+
+<tr>
+<td>sewerage</td>
+<td>0.26</td>
+</tr>
+
+<tr>
+<td>singular</td>
+<td>0.26</td>
+</tr>
+
+<tr>
+<td>sitna</td>
+<td>0.26</td>
+</tr>
+
+<tr>
+<td>sparql</td>
+<td>0.26</td>
+</tr>
+
+<tr>
+<td>storm</td>
+<td>0.26</td>
+</tr>
+
+<tr>
+<td>surveillance</td>
+<td>0.26</td>
+</tr>
+
+<tr>
+<td>larger</td>
+<td>0.25</td>
+</tr>
+</tbody>
+</table>
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <ul class="list-inline text-center">
+                    <li>
+                      <a href="mailto:spatialbits@posteo.net">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://twitter.com/spatialbits">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://github.com/spatialbitz">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                  </ul>
+                  <p class="copyright text-muted"></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="http://localhost:1313//js/jquery.min.js"></script>
+
+    
+    <script src="http://localhost:1313//js/bootstrap.min.js"></script>
+
+    
+    <script src="http://localhost:1313//js/clean-blog.js"></script>
+
+    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'XX-00000000-0', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+<script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+
+</html>
+

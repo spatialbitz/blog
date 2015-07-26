@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Barcat on Spatialbits </title>
+    <link>http://localhost:1313/categories/barcat/</link>
+    <description>Recent content in Barcat on Spatialbits </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Jul 2015 13:00:38 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/barcat/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>welcome</title>
+      <link>http://localhost:1313/post/welcome/</link>
+      <pubDate>Sun, 19 Jul 2015 13:00:38 +0200</pubDate>
+      
+      <guid>http://localhost:1313/post/welcome/</guid>
+      <description>&lt;p&gt;eggs&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

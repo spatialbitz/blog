@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Visualizing OSM data with cartodb to aid HOTOSM validation -- Spatialbits </title>
+
+    
+
+    
+    <link href="http://localhost:1313//css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link href="http://localhost:1313//css/clean-blog.min.css" rel="stylesheet">
+
+    
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    
+    
+    
+
+</head>
+
+<body>
+
+    
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://localhost:1313/">Spatialbits </a>
+            </div>
+
+                       
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li>
+                        <a href="http://localhost:1313/">home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://localhost:1313/post/">Archives</a>
+                    </li>
+                    
+                  </ul>
+            </div>
+           
+
+        </div>
+        
+    </nav>
+
+
+    
+    
+    <header class="intro-header" style="background-image: url('http://localhost:1313//img/post-bg.jpg')">
+    
+      <div class="container">
+        <div class="row">
+           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+             <div class="post-heading">
+               <h1>Visualizing OSM Data With Cartodb To Aid HOTOSM Validation</h1>
+               <h2 class="subheading"></h2>
+               <span class="meta">Posted by <a href="#">Martin Seiler</a> on Sat, Sep 6, 2014
+                 <br />
+                 In <a href="http://localhost:1313/categories/gi" >GI</a>, <a href="http://localhost:1313/categories/osm" >OSM</a>, 
+
+                 <br />
+                 Tags <a href="http://localhost:1313/tags/hotosm" >hotosm</a> <a href="http://localhost:1313/tags/cartodb" >cartodb</a> 
+
+               </span>
+             </div>
+           </div>
+        </div>
+      </div>
+    </header>
+
+    
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <p>Playing around with <a href="http://cartodb.com/">cartodb</a> has been on my list for a while now. Also I started to contribute to <a href="http://hot.openstreetmap.org/">HOTOSM</a> lately. During mapping and validation work for the Ebola related HOTOSM tasks I noticed that in some areas the relevant features are not mapped as expected. Presumably unexperienced mappers map e.g.  buildings as single nodes and/or don&rsquo;t apply the <a href="https://wiki.openstreetmap.org/wiki/Highway_Tag_Africa">highway tag guidelines for Africa</a> correctly. As some enthusiastic mappers may work on sparse areas in a short time its difficult track down mistakes and notify the contributor early.
+ While josm offers <a href="https://www.mapbox.com/blog/2012-08-15-using-filters-josm/">flexible filter functionalities</a> I find it hard to get a flexible overview of a wider area.</p>
+
+<p>Hence I wanted to find out how if and how the visualization features of cartodb could be useful here.</p>
+
+<p>So I signed up for a free test account at cartodb (50 MB and 5 table included) and downloaded the OSM data for Sierra Leone from <a href="http://download.geofabrik.de/africa.html">Geofabrik</a>.
+While it is possible with cartodb to import OSM data directly and extract relevant data using SQL (postgis) queries, I imported the data into a locale database and ran some queries to create three tables (csv) containing the following features:</p>
+
+<ol>
+<li>all single nodes that are tagged as buildings</li>
+<li>all buildings that that are not tagged with &lsquo;yes&rsquo; (centroid points of the polygons)</li>
+<li>all start points of highways that are not tagged according to the guidelines</li>
+</ol>
+
+<p>To make it easy to evaluate single features in josm I wrote a python script to add a column in the csv table that contains a link that downloads the feature in josm, using the remote plugin.</p>
+
+<p>Uploading the csv to cartodb and creating visualizations is easy then, resulting in the following map:</p>
+
+<iframe src="http://spatialbits.cartodb.com/viz/3a66c076-3210-11e4-930e-0edbca4b5057/embed_map" height="600" width="800"></iframe>
+
+<p>(Point data <a href="http://www.openstreetmap.org/copyright/en">copyright by OpenStreetMap contributors</a> under the <a href="http://opendatacommons.org/licenses/odbl/">ODbL</a>)</p>
+
+<p>The first layer (&lsquo;single nodes buildings&rsquo;) shows some clusters where buildings are mapped as single nodes, e.g. just south of &lsquo;Bo&rsquo;, an area that was mapped as part of the HOTOSM <a href="http://tasks.hotosm.org/project/605">task #605</a>.</p>
+
+<p>The second layer (&lsquo;building != yes&rsquo;) shows all centroids of buildings and the color indicates the tag. Some clusters, e.g. where buildings are tagged as &lsquo;house&rsquo; become obvious.</p>
+
+<p>The third layer then shows the starting nodes of highways and their related tags though the color, showing e.g. a lot of &lsquo;footways&rsquo;.</p>
+
+<p>Cartodb is easy to use and leads to quick visualization results, revealing areas with (potential) mapping/quality issues to further evaluate.
+ I just set this up as an experiment. As the OSM map evolves the pictures will change and hence my map will out date. However cartodb offers synchronization with data sources. So it would be rather easy to implement a workflow that creates e.g. a daily picture of a given area and a focus on specific validation issues.</p>
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <ul class="list-inline text-center">
+                    <li>
+                      <a href="mailto:spatialbits@posteo.net">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://twitter.com/spatialbits">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://github.com/spatialbitz">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                  </ul>
+                  <p class="copyright text-muted"></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="http://localhost:1313//js/jquery.min.js"></script>
+
+    
+    <script src="http://localhost:1313//js/bootstrap.min.js"></script>
+
+    
+    <script src="http://localhost:1313//js/clean-blog.js"></script>
+
+    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'XX-00000000-0', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+<script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+
+</html>
+

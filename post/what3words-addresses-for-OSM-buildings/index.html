@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>what3words addresses for OSM buildings -- Spatialbits </title>
+
+    
+
+    
+    <link href="http://localhost:1313//css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link href="http://localhost:1313//css/clean-blog.min.css" rel="stylesheet">
+
+    
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    
+    
+    
+
+</head>
+
+<body>
+
+    
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://localhost:1313/">Spatialbits </a>
+            </div>
+
+                       
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li>
+                        <a href="http://localhost:1313/">home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://localhost:1313/post/">Archives</a>
+                    </li>
+                    
+                  </ul>
+            </div>
+           
+
+        </div>
+        
+    </nav>
+
+
+    
+    
+    <header class="intro-header" style="background-image: url('http://localhost:1313//img/post-bg.jpg')">
+    
+      <div class="container">
+        <div class="row">
+           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+             <div class="post-heading">
+               <h1>What3words Addresses For OSM Buildings</h1>
+               <h2 class="subheading"></h2>
+               <span class="meta">Posted by <a href="#">Martin Seiler</a> on Wed, Jul 22, 2015
+                 <br />
+                 In <a href="http://localhost:1313/categories/gi" >GI</a>, <a href="http://localhost:1313/categories/osm" >OSM</a>, 
+
+                 <br />
+                 Tags <a href="http://localhost:1313/tags/what3words" >what3words</a> <a href="http://localhost:1313/tags/geocoding" >geocoding</a> 
+
+               </span>
+             </div>
+           </div>
+        </div>
+      </div>
+    </header>
+
+    
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <p>A while ago I <a href="http://localhost:1313/post/assigning-what3words-addresses-to-OSM-building">experimented</a> with assigning multilingual <em>what3words</em> addresses to OpenStreetMap buildings in Sierra Leone.
+ I basically downloaded the OSM data, derived the buildings and their centroids and published a map based on CartoDB. Upon a click the what3words-API was queried for the addresses in multiple languages.</p>
+
+<p>There are some obvious disadvantages to this approach.</p>
+
+<ul>
+<li>it operates on a static database - hence updates in the OSM database are not taken into account.</li>
+<li>it doesn&rsquo;t scale very well. According to <a href="http://taginfo.openstreetmap.org/keys/building">taginfo</a> there are currently &gt; 157.000.000 buildings in the OSM database.</li>
+<li>A user would only want to query a few buildings of particular interest.</li>
+</ul>
+
+<p>So here is a new approach, which makes it possible to easily find what3words addresses for all OSM buildings:</p>
+
+<p><a href="https://spatialbitz.github.io/w3w4osm/">https://spatialbitz.github.io/w3w4osm/</a></p>
+
+<p>Just click on any building in the map and afterwards on the red dot, marking the center of the geometry. You can also search for a place/address of interest.</p>
+
+<iframe src="http://spatialbitz.github.io/w3w4osm/index.html" height="600" width="800"><p> Unfortunately the iframe doesn't load in your browser. You can open the map in a <a href="https://spatialbitz.github.io/w3w4osm/">new window</a>. </p></iframe> 
+
+<p>Ideas/things to improve:</p>
+
+<ul>
+<li>advanced geocoding functionality</li>
+<li>what3words geocoding support</li>
+<li>support for all what3words-languages</li>
+<li>API-error handling &amp; notifications</li>
+<li>fine-tune the overpass-API calls (feature types, bbox)</li>
+<li>improve design</li>
+<li>&hellip;</li>
+</ul>
+
+<p>I&rsquo;d be happy to accept pull-request, go ahead and fork the project on <a href="https://github.com/spatialbitz/w3w4osm">github</a>!
+ Also I&rsquo;d love to hear feedback regarding the usefulness of this approach and/or real world applications using OSM data with what3words addresses.</p>
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <ul class="list-inline text-center">
+                    <li>
+                      <a href="mailto:spatialbits@posteo.net">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://twitter.com/spatialbits">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://github.com/spatialbitz">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                  </ul>
+                  <p class="copyright text-muted"></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="http://localhost:1313//js/jquery.min.js"></script>
+
+    
+    <script src="http://localhost:1313//js/bootstrap.min.js"></script>
+
+    
+    <script src="http://localhost:1313//js/clean-blog.js"></script>
+
+    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'XX-00000000-0', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+<script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+
+</html>
+
