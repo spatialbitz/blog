@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gwf on Spatialbits </title>
-    <link>https://spatialbitz.github.io/blog/tags/gwf/</link>
+    <link>//spatialbitz.github.io/blog/tags/gwf/</link>
     <description>Recent content in Gwf on Spatialbits </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 22 May 2015 13:00:38 +0200</lastBuildDate>
-    <atom:link href="https://spatialbitz.github.io/blog/tags/gwf/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//spatialbitz.github.io/blog/tags/gwf/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Text Mining the Geospatial World Forum Contributions</title>
-      <link>https://spatialbitz.github.io/blog/post/text-mining-the-geospatial-world-forum-contributions/</link>
+      <link>//spatialbitz.github.io/blog/post/text-mining-the-geospatial-world-forum-contributions/</link>
       <pubDate>Fri, 22 May 2015 13:00:38 +0200</pubDate>
       
-      <guid>https://spatialbitz.github.io/blog/post/text-mining-the-geospatial-world-forum-contributions/</guid>
+      <guid>//spatialbitz.github.io/blog/post/text-mining-the-geospatial-world-forum-contributions/</guid>
       <description>&lt;p&gt;This year the INSPIRE conference is organized as a joint event with the &lt;a href=&#34;http://www.geospatialworldforum.org/&#34;&gt;Geospatial World Forum&lt;/a&gt; in Lisbon.&lt;/p&gt;
 
-&lt;p&gt;As &lt;a href=&#34;https://spatialbitz.github.io/blog/post/inspire2014&#34;&gt;last year&lt;/a&gt; I did some text mining on the conference abstracts to get a feeling on this years&amp;rsquo; hot topics and to help me identify sessions/presentations that are particularly interesting.&lt;/p&gt;
+&lt;p&gt;As &lt;a href=&#34;//spatialbitz.github.io/blog/post/inspire2014&#34;&gt;last year&lt;/a&gt; I did some text mining on the conference abstracts to get a feeling on this years&amp;rsquo; hot topics and to help me identify sessions/presentations that are particularly interesting.&lt;/p&gt;
 
 &lt;p&gt;Here are the frequently used terms (&amp;gt; 65):&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://spatialbitz.github.io/blog/img/tf2015.png&#34; alt=&#34;image not found&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;//spatialbitz.github.io/blog/img/tf2015.png&#34; alt=&#34;image not found&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;And this table shows how terms are correlated with the term &amp;ldquo;INSPIRE&amp;rdquo;:&lt;/p&gt;
