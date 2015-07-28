@@ -1,0 +1,1118 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>En on Spatialbits </title>
+    <link>//spatialbitz.github.io/blog/categories/en/</link>
+    <description>Recent content in En on Spatialbits </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 22 Jul 2015 13:00:38 +0200</lastBuildDate>
+    <atom:link href="//spatialbitz.github.io/blog/categories/en/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>what3words addresses for OSM buildings</title>
+      <link>//spatialbitz.github.io/blog/post/what3words-addresses-for-OSM-buildings/</link>
+      <pubDate>Wed, 22 Jul 2015 13:00:38 +0200</pubDate>
+      
+      <guid>//spatialbitz.github.io/blog/post/what3words-addresses-for-OSM-buildings/</guid>
+      <description>&lt;p&gt;A while ago I &lt;a href=&#34;//spatialbitz.github.io/blog/post/assigning-what3words-addresses-to-OSM-building&#34;&gt;experimented&lt;/a&gt; with assigning multilingual &lt;em&gt;what3words&lt;/em&gt; addresses to OpenStreetMap buildings in Sierra Leone.
+ I basically downloaded the OSM data, derived the buildings and their centroids and published a map based on CartoDB. Upon a click the what3words-API was queried for the addresses in multiple languages.&lt;/p&gt;
+
+&lt;p&gt;There are some obvious disadvantages to this approach.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;it operates on a static database - hence updates in the OSM database are not taken into account.&lt;/li&gt;
+&lt;li&gt;it doesn&amp;rsquo;t scale very well. According to &lt;a href=&#34;http://taginfo.openstreetmap.org/keys/building&#34;&gt;taginfo&lt;/a&gt; there are currently &amp;gt; 157.000.000 buildings in the OSM database.&lt;/li&gt;
+&lt;li&gt;A user would only want to query a few buildings of particular interest.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So here is a new approach, which makes it possible to easily find what3words addresses for all OSM buildings:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://spatialbitz.github.io/w3w4osm/&#34;&gt;https://spatialbitz.github.io/w3w4osm/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Just click on any building in the map and afterwards on the red dot, marking the center of the geometry. You can also search for a place/address of interest.&lt;/p&gt;
+
+&lt;iframe src=&#34;http://spatialbitz.github.io/w3w4osm/index.html&#34; height=&#34;600&#34; width=&#34;800&#34;&gt;&lt;p&gt; Unfortunately the iframe doesn&#39;t load in your browser. You can open the map in a &lt;a href=&#34;https://spatialbitz.github.io/w3w4osm/&#34;&gt;new window&lt;/a&gt;. &lt;/p&gt;&lt;/iframe&gt; 
+
+&lt;p&gt;Ideas/things to improve:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;advanced geocoding functionality&lt;/li&gt;
+&lt;li&gt;what3words geocoding support&lt;/li&gt;
+&lt;li&gt;support for all what3words-languages&lt;/li&gt;
+&lt;li&gt;API-error handling &amp;amp; notifications&lt;/li&gt;
+&lt;li&gt;fine-tune the overpass-API calls (feature types, bbox)&lt;/li&gt;
+&lt;li&gt;improve design&lt;/li&gt;
+&lt;li&gt;&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I&amp;rsquo;d be happy to accept pull-request, go ahead and fork the project on &lt;a href=&#34;https://github.com/spatialbitz/w3w4osm&#34;&gt;github&lt;/a&gt;!
+ Also I&amp;rsquo;d love to hear feedback regarding the usefulness of this approach and/or real world applications using OSM data with what3words addresses.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Text Mining the Geospatial World Forum Contributions</title>
+      <link>//spatialbitz.github.io/blog/post/text-mining-the-geospatial-world-forum-contributions/</link>
+      <pubDate>Fri, 22 May 2015 13:00:38 +0200</pubDate>
+      
+      <guid>//spatialbitz.github.io/blog/post/text-mining-the-geospatial-world-forum-contributions/</guid>
+      <description>&lt;p&gt;This year the INSPIRE conference is organized as a joint event with the &lt;a href=&#34;http://www.geospatialworldforum.org/&#34;&gt;Geospatial World Forum&lt;/a&gt; in Lisbon.&lt;/p&gt;
+
+&lt;p&gt;As &lt;a href=&#34;//spatialbitz.github.io/blog/post/inspire2014&#34;&gt;last year&lt;/a&gt; I did some text mining on the conference abstracts to get a feeling on this years&amp;rsquo; hot topics and to help me identify sessions/presentations that are particularly interesting.&lt;/p&gt;
+
+&lt;p&gt;Here are the frequently used terms (&amp;gt; 65):&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;//spatialbitz.github.io/blog/img/tf2015.png&#34; alt=&#34;image not found&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;And this table shows how terms are correlated with the term &amp;ldquo;INSPIRE&amp;rdquo;:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;inspire&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;implement&lt;/td&gt;
+&lt;td&gt;0.59&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;theme&lt;/td&gt;
+&lt;td&gt;0.56&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;direct&lt;/td&gt;
+&lt;td&gt;0.55&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;span style=&#34;color: red;&#34;&gt;concern&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;0.46&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;data&lt;/td&gt;
+&lt;td&gt;0.46&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;present&lt;/td&gt;
+&lt;td&gt;0.44&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;follow&lt;/td&gt;
+&lt;td&gt;0.43&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;example&lt;/td&gt;
+&lt;td&gt;0.42&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;main&lt;/td&gt;
+&lt;td&gt;0.42&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;concrete&lt;/td&gt;
+&lt;td&gt;0.41&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;least&lt;/td&gt;
+&lt;td&gt;0.41&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;native&lt;/td&gt;
+&lt;td&gt;0.41&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;quite&lt;/td&gt;
+&lt;td&gt;0.41&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;exchange&lt;/td&gt;
+&lt;td&gt;0.40&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;provide&lt;/td&gt;
+&lt;td&gt;0.40&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;report&lt;/td&gt;
+&lt;td&gt;0.40&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;conceptual&lt;/td&gt;
+&lt;td&gt;0.39&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;specify&lt;/td&gt;
+&lt;td&gt;0.39&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;transform&lt;/td&gt;
+&lt;td&gt;0.39&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;approach&lt;/td&gt;
+&lt;td&gt;0.38&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;framework&lt;/td&gt;
+&lt;td&gt;0.38&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;implies&lt;/td&gt;
+&lt;td&gt;0.38&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;carried&lt;/td&gt;
+&lt;td&gt;0.37&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;attribute&lt;/td&gt;
+&lt;td&gt;0.36&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;dataset&lt;/td&gt;
+&lt;td&gt;0.36&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;organic&lt;/td&gt;
+&lt;td&gt;0.36&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;practice&lt;/td&gt;
+&lt;td&gt;0.36&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;structure&lt;/td&gt;
+&lt;td&gt;0.36&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;assess&lt;/td&gt;
+&lt;td&gt;0.35&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;december&lt;/td&gt;
+&lt;td&gt;0.35&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;double&lt;/td&gt;
+&lt;td&gt;0.35&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;gml&lt;/td&gt;
+&lt;td&gt;0.35&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;later&lt;/td&gt;
+&lt;td&gt;0.35&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;light&lt;/td&gt;
+&lt;td&gt;0.35&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;mandate&lt;/td&gt;
+&lt;td&gt;0.35&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;non&lt;/td&gt;
+&lt;td&gt;0.35&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;nuts&lt;/td&gt;
+&lt;td&gt;0.35&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;occurred&lt;/td&gt;
+&lt;td&gt;0.35&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;reaction&lt;/td&gt;
+&lt;td&gt;0.35&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;theyre&lt;/td&gt;
+&lt;td&gt;0.35&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;unknown&lt;/td&gt;
+&lt;td&gt;0.35&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;users&lt;/td&gt;
+&lt;td&gt;0.35&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;weeks&lt;/td&gt;
+&lt;td&gt;0.35&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;feedback&lt;/td&gt;
+&lt;td&gt;0.34&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;ign&lt;/td&gt;
+&lt;td&gt;0.34&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;sheets&lt;/td&gt;
+&lt;td&gt;0.34&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;user&lt;/td&gt;
+&lt;td&gt;0.34&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;benefit&lt;/td&gt;
+&lt;td&gt;0.33&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;given&lt;/td&gt;
+&lt;td&gt;0.33&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;thematic&lt;/td&gt;
+&lt;td&gt;0.33&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;addition&lt;/td&gt;
+&lt;td&gt;0.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;advice&lt;/td&gt;
+&lt;td&gt;0.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;annex&lt;/td&gt;
+&lt;td&gt;0.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;annextopic&lt;/td&gt;
+&lt;td&gt;0.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;annum&lt;/td&gt;
+&lt;td&gt;0.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;ascribe&lt;/td&gt;
+&lt;td&gt;0.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;categories&lt;/td&gt;
+&lt;td&gt;0.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;cumulative&lt;/td&gt;
+&lt;td&gt;0.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;discover&lt;/td&gt;
+&lt;td&gt;0.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;ecflood&lt;/td&gt;
+&lt;td&gt;0.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;enable&lt;/td&gt;
+&lt;td&gt;0.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;frd&lt;/td&gt;
+&lt;td&gt;0.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;generic&lt;/td&gt;
+&lt;td&gt;0.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;hydrographic&lt;/td&gt;
+&lt;td&gt;0.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;incompatible&lt;/td&gt;
+&lt;td&gt;0.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;kingdom&lt;/td&gt;
+&lt;td&gt;0.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;littleno&lt;/td&gt;
+&lt;td&gt;0.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;materialise&lt;/td&gt;
+&lt;td&gt;0.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;merges&lt;/td&gt;
+&lt;td&gt;0.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;nonoperable&lt;/td&gt;
+&lt;td&gt;0.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;obvious&lt;/td&gt;
+&lt;td&gt;0.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;outweigh&lt;/td&gt;
+&lt;td&gt;0.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;pool&lt;/td&gt;
+&lt;td&gt;0.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;pragmatic&lt;/td&gt;
+&lt;td&gt;0.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;returns&lt;/td&gt;
+&lt;td&gt;0.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;schema&lt;/td&gt;
+&lt;td&gt;0.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;society&lt;/td&gt;
+&lt;td&gt;0.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;subjectspecific&lt;/td&gt;
+&lt;td&gt;0.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;tangible&lt;/td&gt;
+&lt;td&gt;0.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;thats&lt;/td&gt;
+&lt;td&gt;0.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;triennial&lt;/td&gt;
+&lt;td&gt;0.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;tune&lt;/td&gt;
+&lt;td&gt;0.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;unstructured&lt;/td&gt;
+&lt;td&gt;0.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;wfd&lt;/td&gt;
+&lt;td&gt;0.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;wfdflood&lt;/td&gt;
+&lt;td&gt;0.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;wfdfrd&lt;/td&gt;
+&lt;td&gt;0.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;yield&lt;/td&gt;
+&lt;td&gt;0.32&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;available&lt;/td&gt;
+&lt;td&gt;0.31&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;compliant&lt;/td&gt;
+&lt;td&gt;0.31&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;environment&lt;/td&gt;
+&lt;td&gt;0.31&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;exploit&lt;/td&gt;
+&lt;td&gt;0.31&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;include&lt;/td&gt;
+&lt;td&gt;0.31&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;service&lt;/td&gt;
+&lt;td&gt;0.31&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;accompanied&lt;/td&gt;
+&lt;td&gt;0.30&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;download&lt;/td&gt;
+&lt;td&gt;0.30&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;experience&lt;/td&gt;
+&lt;td&gt;0.30&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;final&lt;/td&gt;
+&lt;td&gt;0.30&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;inpsire&lt;/td&gt;
+&lt;td&gt;0.30&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;realise&lt;/td&gt;
+&lt;td&gt;0.30&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;wfs&lt;/td&gt;
+&lt;td&gt;0.30&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;aggregate&lt;/td&gt;
+&lt;td&gt;0.29&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;expected&lt;/td&gt;
+&lt;td&gt;0.29&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;feature&lt;/td&gt;
+&lt;td&gt;0.29&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;incremental&lt;/td&gt;
+&lt;td&gt;0.29&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;indirect&lt;/td&gt;
+&lt;td&gt;0.29&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;member&lt;/td&gt;
+&lt;td&gt;0.29&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;mif&lt;/td&gt;
+&lt;td&gt;0.29&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;might&lt;/td&gt;
+&lt;td&gt;0.29&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;network&lt;/td&gt;
+&lt;td&gt;0.29&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;optimum&lt;/td&gt;
+&lt;td&gt;0.29&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;overdetection&lt;/td&gt;
+&lt;td&gt;0.29&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;perhaps&lt;/td&gt;
+&lt;td&gt;0.29&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;persistent&lt;/td&gt;
+&lt;td&gt;0.29&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;railwayline&lt;/td&gt;
+&lt;td&gt;0.29&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;splits&lt;/td&gt;
+&lt;td&gt;0.29&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;transportnetwork&lt;/td&gt;
+&lt;td&gt;0.29&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;underdetection&lt;/td&gt;
+&lt;td&gt;0.29&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;view&lt;/td&gt;
+&lt;td&gt;0.29&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;work&lt;/td&gt;
+&lt;td&gt;0.29&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;aim&lt;/td&gt;
+&lt;td&gt;0.28&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;arise&lt;/td&gt;
+&lt;td&gt;0.28&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;concept&lt;/td&gt;
+&lt;td&gt;0.28&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;deal&lt;/td&gt;
+&lt;td&gt;0.28&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;document&lt;/td&gt;
+&lt;td&gt;0.28&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;file&lt;/td&gt;
+&lt;td&gt;0.28&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;net&lt;/td&gt;
+&lt;td&gt;0.28&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;possible&lt;/td&gt;
+&lt;td&gt;0.28&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;temporal&lt;/td&gt;
+&lt;td&gt;0.28&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;test&lt;/td&gt;
+&lt;td&gt;0.28&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;annual&lt;/td&gt;
+&lt;td&gt;0.27&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;consider&lt;/td&gt;
+&lt;td&gt;0.27&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;correspond&lt;/td&gt;
+&lt;td&gt;0.27&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;french&lt;/td&gt;
+&lt;td&gt;0.27&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;geometric&lt;/td&gt;
+&lt;td&gt;0.27&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;maintenance&lt;/td&gt;
+&lt;td&gt;0.27&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;principle&lt;/td&gt;
+&lt;td&gt;0.27&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;rule&lt;/td&gt;
+&lt;td&gt;0.27&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;year&lt;/td&gt;
+&lt;td&gt;0.27&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;according&lt;/td&gt;
+&lt;td&gt;0.26&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;around&lt;/td&gt;
+&lt;td&gt;0.26&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;best&lt;/td&gt;
+&lt;td&gt;0.26&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;centralised&lt;/td&gt;
+&lt;td&gt;0.26&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;conclude&lt;/td&gt;
+&lt;td&gt;0.26&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;disseminate&lt;/td&gt;
+&lt;td&gt;0.26&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;drains&lt;/td&gt;
+&lt;td&gt;0.26&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;european&lt;/td&gt;
+&lt;td&gt;0.26&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;forecast&lt;/td&gt;
+&lt;td&gt;0.26&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;geosmartcity&lt;/td&gt;
+&lt;td&gt;0.26&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;idena&lt;/td&gt;
+&lt;td&gt;0.26&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;impact&lt;/td&gt;
+&lt;td&gt;0.26&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;issue&lt;/td&gt;
+&lt;td&gt;0.26&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;nation&lt;/td&gt;
+&lt;td&gt;0.26&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;navarre&lt;/td&gt;
+&lt;td&gt;0.26&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;new&lt;/td&gt;
+&lt;td&gt;0.26&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;part&lt;/td&gt;
+&lt;td&gt;0.26&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;priori&lt;/td&gt;
+&lt;td&gt;0.26&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;propose&lt;/td&gt;
+&lt;td&gt;0.26&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;recommend&lt;/td&gt;
+&lt;td&gt;0.26&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;reinforce&lt;/td&gt;
+&lt;td&gt;0.26&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;reservoir&lt;/td&gt;
+&lt;td&gt;0.26&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;sewerage&lt;/td&gt;
+&lt;td&gt;0.26&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;singular&lt;/td&gt;
+&lt;td&gt;0.26&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;sitna&lt;/td&gt;
+&lt;td&gt;0.26&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;sparql&lt;/td&gt;
+&lt;td&gt;0.26&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;storm&lt;/td&gt;
+&lt;td&gt;0.26&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;surveillance&lt;/td&gt;
+&lt;td&gt;0.26&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;larger&lt;/td&gt;
+&lt;td&gt;0.25&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Assigning what3words addresses to OSM buildings</title>
+      <link>//spatialbitz.github.io/blog/post/assigning-what3words-addresses-to-OSM-building/</link>
+      <pubDate>Tue, 16 Dec 2014 13:00:38 +0200</pubDate>
+      
+      <guid>//spatialbitz.github.io/blog/post/assigning-what3words-addresses-to-OSM-building/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://what3words.com/&#34;&gt;What3Words&lt;/a&gt; offers multilingual and memorizable addresses for 3x3 meter grid cells on the entire globe (more on this in an earlier &lt;a href=&#34;//spatialbitz.github.io/blog/post/what3words-geocoder-for-geopy&#34;&gt;post&lt;/a&gt;). So with w3w it becomes possible to assign addresses e.g. to buildings even in countries without functioning traditional addressing schemes.&lt;/p&gt;
+
+&lt;p&gt;As a demo I assigned addresses to buildings in Sierra Leone, as available in the  &lt;a href=&#34;http://www.openstreetmap.org/#map=8/8.381/-11.886&#34;&gt;OpenStreetMap&lt;/a&gt; database &lt;span style=&#34;font-size: xx-small;&#34;&gt;(open in &lt;a href=&#34;http://cdn.rawgit.com/spatialbitz/6f73b48c953d3f29bde7/raw/6093045ceeba26cd26de5ec441bad0cfe1cc06d2/gistfile1.html&#34;&gt;new window&lt;/a&gt;)&lt;/span&gt;:&lt;/p&gt;
+
+&lt;iframe src=&#34;http://cdn.rawgit.com/spatialbitz/6f73b48c953d3f29bde7/raw/6093045ceeba26cd26de5ec441bad0cfe1cc06d2/gistfile1.html&#34; height=&#34;600&#34; width=&#34;800&#34;&gt;&lt;p&gt; Unfortunately the iframe doesn&#39;t load in your browser. You can open the map in a &lt;a href=&#34;http://cdn.rawgit.com/spatialbitz/6f73b48c953d3f29bde7/raw/6093045ceeba26cd26de5ec441bad0cfe1cc06d2/gistfile1.html&#34;&gt;new window&lt;/a&gt;. &lt;/p&gt;&lt;/iframe&gt; 
+
+&lt;p&gt;For this example I downloaded the OSM data from &lt;a href=&#34;http://www.geofabrik.de/&#34;&gt;Geofabrik&lt;/a&gt;, loaded the buildings (&amp;gt; 420.000) into a postgreSQL database and derived the centroid for each polygon. The centroids&amp;rsquo; lat/lon coordinates are used to query the what3words API in order to receive the w3w in different languages.
+ (Alternatively of course it would be possible to receive the center points of the buildings on the fly e.g. from the overpass API).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What3Words geocoder for geopy</title>
+      <link>//spatialbitz.github.io/blog/post/what3words-geocoder-for-geopy/</link>
+      <pubDate>Sun, 02 Nov 2014 13:00:38 +0200</pubDate>
+      
+      <guid>//spatialbitz.github.io/blog/post/what3words-geocoder-for-geopy/</guid>
+      <description>&lt;p&gt;&lt;em&gt;What3Words&lt;/em&gt; is an innovative, plain simple and multilingual addressing scheme:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;w3w is a giant grid of the world made up of 57 trillion squares of 3 metres x 3 metres.
+Each square has been given a 3 word address comprised of 3 words from the dictionary. An example of a w3w address is &lt;strong&gt;gazed.across.like&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&#34;//spatialbitz.github.io/blog/img/squares-graphic.png&#34; alt=&#34;image not found&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;(source: &lt;a href=&#34;http://what3words.com/about&#34;&gt;What3Words&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;I recently added a &lt;em&gt;What3Words&lt;/em&gt; geocoder to the &lt;a href=&#34;https://github.com/spatialbitz/geopy&#34;&gt;geopy&lt;/a&gt; package.&lt;/p&gt;
+
+&lt;p&gt;So now its possible to geocode and reverse geocode &lt;em&gt;What3Words&lt;/em&gt; from python, as shown in this example:&lt;/p&gt;
+
+&lt;script src=&#34;https://gist.github.com/spatialbitz/c265b6788433b52c3b13.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;Languages currently supported by the service are: DE, EN, ES, FR, PT, RU, SV, TR.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;[Edit: 2014-12-10]&lt;/strong&gt;
+ **My pull request has been accepted and the what3words geocoder became part of &lt;a href=&#34;https://github.com/geopy/geopy&#34;&gt;geopy 1.5.0&lt;/a&gt;!  **&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Geocoding with python and OSM</title>
+      <link>//spatialbitz.github.io/blog/post/geocoding-with-python-and-OSM/</link>
+      <pubDate>Mon, 22 Sep 2014 13:00:38 +0200</pubDate>
+      
+      <guid>//spatialbitz.github.io/blog/post/geocoding-with-python-and-OSM/</guid>
+      <description>&lt;p&gt;Geocoding is the process of relating implicit location information (such as an address or a the name of a river) to explicit location information in form of geographic coordinates.&lt;/p&gt;
+
+&lt;p&gt;Several companies, e.g. &lt;a href=&#34;https://developers.google.com/maps/documentation/geocoding/&#34;&gt;Google&lt;/a&gt; and &lt;a href=&#34;https://developer.here.com/geocoder&#34;&gt;Nokia/HERE&lt;/a&gt; offer commercial geocoding services/APIs. &lt;a href=&#34;http://wiki.openstreetmap.org/wiki/Nominatim&#34;&gt;Nominatim&lt;/a&gt; i&lt;em&gt;s a tool to search OSM data by name and address and to generate synthetic addresses of OSM points&lt;/em&gt; and hence a geocoder operating on the OSM database.
+ While many geocoders offer easy to use APIs that can be directly utilized from a web browser, they unfold their full potential when called from e.g. a script enabling batch geocoding for many place names at once.
+&lt;a href=&#34;https://github.com/geopy/geopy&#34;&gt;geopy&lt;/a&gt; is a geocoding toolbox for Python, offering access to numerous geocoding services.&lt;/p&gt;
+
+&lt;p&gt;Here is an example of geocoding with Nominatim:&lt;/p&gt;
+
+&lt;script src=&#34;https://gist.github.com/spatialbitz/bb07486888688f8058cd.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;which returns several dicts like:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;{u&#39;display_name&#39;: u&#39;Elbe, Landkreis Wittenberg, Sachsen-Anhalt, Deutschland, European Union&#39;, u&#39;importance&#39;: 0.72552692721096, u&#39;place_id&#39;: u&#39;9208507982&#39;, u&#39;lon&#39;: u&#39;12.5663365&#39;, u&#39;lat&#39;: u&#39;51.867922&#39;, u&#39;osm_type&#39;: u&#39;relation&#39;, u&#39;licence&#39;: u&#39;Data \xa9 OpenStreetMap contributors, ODbL 1.0\. http://www.openstreetmap.org/copyright&#39;, u&#39;osm_id&#39;: u&#39;123822&#39;, u&#39;boundingbox&#39;: [u&#39;50.0168724060059&#39;, u&#39;54.0075302124023&#39;, u&#39;8.22170829772949&#39;, u&#39;15.9315462112427&#39;], u&#39;type&#39;: u&#39;river&#39;, u&#39;class&#39;: u&#39;waterway&#39;}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Among other details these contain lat/lon coordinates and the boudning box of the feature. But wouldn&amp;rsquo;t it be nice if the result would contain the full geometry as well? Well, while this is supported by the Nominatim API it was not - until recently - by the geopy toolbox. I &lt;a href=&#34;https://github.com/spatialbitz/geopy&#34;&gt;added&lt;/a&gt; support for exactly that, so now:&lt;/p&gt;
+
+&lt;script src=&#34;https://gist.github.com/spatialbitz/85476473a8bff1197a81.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;leads to:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;MULTILINESTRING((15.53613 50.7756972,15.5364593 50.7755378,15.5367906 50.7754773,15.5372784 50.7754914,15.5378943 50.7752649,15.5382691 50.7752837,15.5384418 50.7752514,15.5388037 [...])) 
+LINESTRING(7.0094126 51.1325696,7.0093372 51.1324799,7.009245 51.1323739,7.0091836 51.1322698,7.0090853 51.1321503,7.0090361 51.1320982,7.0089716 51.1319945 7.0085078 51.1314622 [...])&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;so the full geometries are returned.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;EDIT (2014-09-23):&lt;/strong&gt;
+ &lt;del&gt;(Note: Currently this is implemented in my &lt;a href=&#34;https://github.com/spatialbitz/geopy&#34;&gt;github-fork&lt;/a&gt;, it should appear in the &lt;a href=&#34;https://github.com/geopy/geopy&#34;&gt;official repo&lt;/a&gt; eventually. A pull request is pending.)&lt;/del&gt;
+ The pull request has been accepted and so the functionality is now available in the &lt;a href=&#34;https://github.com/geopy/geopy&#34;&gt;official repo&lt;/a&gt; (release 1.3.0).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;EDIT (2014-10-18):&lt;/strong&gt;
+ Please make sure to respect &lt;a href=&#34;http://wiki.openstreetmap.org/wiki/Nominatim_usage_policy&#34;&gt;Nominatim&amp;rsquo;s usage policy!&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Visualizing OSM data with cartodb to aid HOTOSM validation</title>
+      <link>//spatialbitz.github.io/blog/post/vizualizing-osm-data-w-cartodb/</link>
+      <pubDate>Sat, 06 Sep 2014 13:00:38 +0200</pubDate>
+      
+      <guid>//spatialbitz.github.io/blog/post/vizualizing-osm-data-w-cartodb/</guid>
+      <description>&lt;p&gt;Playing around with &lt;a href=&#34;http://cartodb.com/&#34;&gt;cartodb&lt;/a&gt; has been on my list for a while now. Also I started to contribute to &lt;a href=&#34;http://hot.openstreetmap.org/&#34;&gt;HOTOSM&lt;/a&gt; lately. During mapping and validation work for the Ebola related HOTOSM tasks I noticed that in some areas the relevant features are not mapped as expected. Presumably unexperienced mappers map e.g.  buildings as single nodes and/or don&amp;rsquo;t apply the &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Highway_Tag_Africa&#34;&gt;highway tag guidelines for Africa&lt;/a&gt; correctly. As some enthusiastic mappers may work on sparse areas in a short time its difficult track down mistakes and notify the contributor early.
+ While josm offers &lt;a href=&#34;https://www.mapbox.com/blog/2012-08-15-using-filters-josm/&#34;&gt;flexible filter functionalities&lt;/a&gt; I find it hard to get a flexible overview of a wider area.&lt;/p&gt;
+
+&lt;p&gt;Hence I wanted to find out how if and how the visualization features of cartodb could be useful here.&lt;/p&gt;
+
+&lt;p&gt;So I signed up for a free test account at cartodb (50 MB and 5 table included) and downloaded the OSM data for Sierra Leone from &lt;a href=&#34;http://download.geofabrik.de/africa.html&#34;&gt;Geofabrik&lt;/a&gt;.
+While it is possible with cartodb to import OSM data directly and extract relevant data using SQL (postgis) queries, I imported the data into a locale database and ran some queries to create three tables (csv) containing the following features:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;all single nodes that are tagged as buildings&lt;/li&gt;
+&lt;li&gt;all buildings that that are not tagged with &amp;lsquo;yes&amp;rsquo; (centroid points of the polygons)&lt;/li&gt;
+&lt;li&gt;all start points of highways that are not tagged according to the guidelines&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;To make it easy to evaluate single features in josm I wrote a python script to add a column in the csv table that contains a link that downloads the feature in josm, using the remote plugin.&lt;/p&gt;
+
+&lt;p&gt;Uploading the csv to cartodb and creating visualizations is easy then, resulting in the following map:&lt;/p&gt;
+
+&lt;iframe src=&#34;http://spatialbits.cartodb.com/viz/3a66c076-3210-11e4-930e-0edbca4b5057/embed_map&#34; height=&#34;600&#34; width=&#34;800&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;(Point data &lt;a href=&#34;http://www.openstreetmap.org/copyright/en&#34;&gt;copyright by OpenStreetMap contributors&lt;/a&gt; under the &lt;a href=&#34;http://opendatacommons.org/licenses/odbl/&#34;&gt;ODbL&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;The first layer (&amp;lsquo;single nodes buildings&amp;rsquo;) shows some clusters where buildings are mapped as single nodes, e.g. just south of &amp;lsquo;Bo&amp;rsquo;, an area that was mapped as part of the HOTOSM &lt;a href=&#34;http://tasks.hotosm.org/project/605&#34;&gt;task #605&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The second layer (&amp;lsquo;building != yes&amp;rsquo;) shows all centroids of buildings and the color indicates the tag. Some clusters, e.g. where buildings are tagged as &amp;lsquo;house&amp;rsquo; become obvious.&lt;/p&gt;
+
+&lt;p&gt;The third layer then shows the starting nodes of highways and their related tags though the color, showing e.g. a lot of &amp;lsquo;footways&amp;rsquo;.&lt;/p&gt;
+
+&lt;p&gt;Cartodb is easy to use and leads to quick visualization results, revealing areas with (potential) mapping/quality issues to further evaluate.
+ I just set this up as an experiment. As the OSM map evolves the pictures will change and hence my map will out date. However cartodb offers synchronization with data sources. So it would be rather easy to implement a workflow that creates e.g. a daily picture of a given area and a focus on specific validation issues.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Text Mining INSPIRE Conference Contributions</title>
+      <link>//spatialbitz.github.io/blog/post/inspire2014/</link>
+      <pubDate>Tue, 17 Jun 2014 13:00:38 +0200</pubDate>
+      
+      <guid>//spatialbitz.github.io/blog/post/inspire2014/</guid>
+      <description>&lt;p&gt;So the &lt;a href=&#34;http://inspire.ec.europa.eu/events/conferences/inspire_2014/page/home&#34;&gt;INSPIRE Conference 2014&lt;/a&gt; (#inspire_eu2014) starts tomorrow - after two days of intensive workshops.
+ For me this poses the challenge to decide which of the parallel sessions I should attend to. As I have been experimenting with the &lt;a href=&#34;http://www.r-project.org/&#34;&gt;R framework&lt;/a&gt; lately I decided to make use of some &lt;a href=&#34;http://cran.r-project.org/web/packages/tm/index.html&#34;&gt;text mining&lt;/a&gt; techniques instead of reading through all the abstracts to get an idea about hot topics, trends and potentially interesting sessions.&lt;/p&gt;
+
+&lt;p&gt;Here are some of my &amp;lsquo;results&amp;rsquo;. More on the methodology below.&lt;/p&gt;
+
+&lt;p&gt;To get a first impression I take a  look at terms that appear frequently (15+) in the contribution&amp;rsquo;s titles:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;//spatialbitz.github.io/blog/img/tf.png&#34; alt=&#34;image not found&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;And the same for terms in the abstracts (150+)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;//spatialbitz.github.io/blog/img/tf_abstracts150+.png&#34; alt=&#34;image not found&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Also from the abstracts a nicer looking wordcloud (100+):&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;//spatialbitz.github.io/blog/img/wc_abstracts_100+.png&#34; alt=&#34;image not found&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Now I&amp;rsquo;d like to identify contributions that deal with topics of interest (e.g. &amp;ldquo;benefits&amp;rdquo; (2+), &amp;ldquo;health&amp;rdquo; (1+) or &amp;ldquo;metadata&amp;rdquo; (5+)):&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;//spatialbitz.github.io/blog/img/tfBenefits2+.png&#34; alt=&#34;image not found&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;//spatialbitz.github.io/blog/img/tfHealth1+.png&#34; alt=&#34;image not found&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;//spatialbitz.github.io/blog/img/tfMetadata5+.png&#34; alt=&#34;image not found&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Taken the &amp;lsquo;contribution ID&amp;rsquo; (just the number) I can access the full abstract:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://inspire.ec.europa.eu/events/conferences/inspire_2014/schedule/submissions/**&#34;&gt;http://inspire.ec.europa.eu/events/conferences/inspire_2014/schedule/submissions/**&lt;/a&gt;&lt;ID&gt;**.html&lt;/p&gt;
+
+&lt;p&gt;Besides that the tm-package offers a lot of functionality to analyse the datasets further. For example I can identify terms that are correlated to a specific term. For instance terms that are correlated (0.5+) with &amp;ldquo;wfs&amp;rdquo; (considering all abstracs) are:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;//spatialbitz.github.io/blog/img/assocWfs05.png&#34; alt=&#34;image not found&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;So a few words on what I did.&lt;/p&gt;
+
+&lt;p&gt;Getting ready:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;download the abstracts (wget)&lt;/li&gt;
+&lt;li&gt;removing headlines, html, blank lines, line breaks (sed, tr)&lt;/li&gt;
+&lt;li&gt;extracting abstracts, titles (sed)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;r-project/tm&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;convert all characters to lower-case&lt;/li&gt;
+&lt;li&gt;remove numbers, punctuation, whitespaces&lt;/li&gt;
+&lt;li&gt;remove URLs&lt;/li&gt;
+&lt;li&gt;remove stopwords&lt;/li&gt;
+&lt;li&gt;apply word stemming&lt;/li&gt;
+&lt;li&gt;apply stemcompletion&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Now the set of documents is ready to run the analyses.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
