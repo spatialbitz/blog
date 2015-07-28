@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Urheberrecht on Spatialbits </title>
-    <link>/spatialbitz.github.io/blog/tags/urheberrecht/</link>
+    <link>//spatialbitz.github.io/blog/tags/urheberrecht/</link>
     <description>Recent content in Urheberrecht on Spatialbits </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 01 Mar 2015 13:00:38 +0200</lastBuildDate>
-    <atom:link href="/spatialbitz.github.io/blog/tags/urheberrecht/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//spatialbitz.github.io/blog/tags/urheberrecht/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Topographische Karten und das Urheberrecht</title>
-      <link>/spatialbitz.github.io/blog/post/topographische-karten-und-das-urheberrecht/</link>
+      <link>//spatialbitz.github.io/blog/post/topographische-karten-und-das-urheberrecht/</link>
       <pubDate>Sun, 01 Mar 2015 13:00:38 +0200</pubDate>
       
-      <guid>/spatialbitz.github.io/blog/post/topographische-karten-und-das-urheberrecht/</guid>
+      <guid>//spatialbitz.github.io/blog/post/topographische-karten-und-das-urheberrecht/</guid>
       <description>&lt;p&gt;Die Frage ob (analoge) topographische Karten dem “Leistungsschutz für Datenbanken” aus dem Urheberrecht unterliegen schwelt seit Jahren. Eine (freie) Nachnutzung der amtlichen Daten wäre dabei sowohl für die Wirtschaft als auch für Open Data Initiativen interessant. Diesbezüglich wird es nun zu einer höchstrichterlichen Klärung kommen, da der BGH diese Frage derzeit behandelt und den EuGH um &lt;a href=&#34;http://openjur.de/u/746945.html&#34;&gt;richtlinienkonforme Auslegung gebeten hat&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Fraglich ist in diesem Zusammenhang nicht die Kartendarstellung an sich (also z.B. der Nachdruck des Kartenwerkes), dieser kann - je nach Schöpfungstiefe - nach § 2 (1) UrhG urheberrechtlichen Schutz genießen, sondern um die Nachnutzung der Informationen, die einer Karte entnommen werden. Im Kern geht es bei den Auseinandersetzungen um die Frage, ob analoge topographische Karten Datenbanken nach &lt;a href=&#34;http://www.gesetze-im-internet.de/urhg/__87a.html&#34;&gt;§87a (1) UrhG&lt;/a&gt; darstellen. Dieser setzt Art. 1 (2) der &lt;a href=&#34;http://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:31996L0009&#34;&gt;Richtlinie 96/9/EG&lt;/a&gt; über den rechtlichen Schutz von Datenbanken in nationales Recht um. Er lautet:&lt;/p&gt;

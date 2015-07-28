@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gi on Spatialbits </title>
-    <link>/spatialbitz.github.io/blog/categories/gi/</link>
+    <link>//spatialbitz.github.io/blog/categories/gi/</link>
     <description>Recent content in Gi on Spatialbits </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 22 Jul 2015 13:00:38 +0200</lastBuildDate>
-    <atom:link href="/spatialbitz.github.io/blog/categories/gi/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//spatialbitz.github.io/blog/categories/gi/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>what3words addresses for OSM buildings</title>
-      <link>/spatialbitz.github.io/blog/post/what3words-addresses-for-OSM-buildings/</link>
+      <link>//spatialbitz.github.io/blog/post/what3words-addresses-for-OSM-buildings/</link>
       <pubDate>Wed, 22 Jul 2015 13:00:38 +0200</pubDate>
       
-      <guid>/spatialbitz.github.io/blog/post/what3words-addresses-for-OSM-buildings/</guid>
-      <description>&lt;p&gt;A while ago I &lt;a href=&#34;/spatialbitz.github.io/blog/post/assigning-what3words-addresses-to-OSM-building&#34;&gt;experimented&lt;/a&gt; with assigning multilingual &lt;em&gt;what3words&lt;/em&gt; addresses to OpenStreetMap buildings in Sierra Leone.
+      <guid>//spatialbitz.github.io/blog/post/what3words-addresses-for-OSM-buildings/</guid>
+      <description>&lt;p&gt;A while ago I &lt;a href=&#34;//spatialbitz.github.io/blog/post/assigning-what3words-addresses-to-OSM-building&#34;&gt;experimented&lt;/a&gt; with assigning multilingual &lt;em&gt;what3words&lt;/em&gt; addresses to OpenStreetMap buildings in Sierra Leone.
  I basically downloaded the OSM data, derived the buildings and their centroids and published a map based on CartoDB. Upon a click the what3words-API was queried for the addresses in multiple languages.&lt;/p&gt;
 
 &lt;p&gt;There are some obvious disadvantages to this approach.&lt;/p&gt;
@@ -53,17 +53,17 @@
     
     <item>
       <title>Text Mining the Geospatial World Forum Contributions</title>
-      <link>/spatialbitz.github.io/blog/post/text-mining-the-geospatial-world-forum-contributions/</link>
+      <link>//spatialbitz.github.io/blog/post/text-mining-the-geospatial-world-forum-contributions/</link>
       <pubDate>Fri, 22 May 2015 13:00:38 +0200</pubDate>
       
-      <guid>/spatialbitz.github.io/blog/post/text-mining-the-geospatial-world-forum-contributions/</guid>
+      <guid>//spatialbitz.github.io/blog/post/text-mining-the-geospatial-world-forum-contributions/</guid>
       <description>&lt;p&gt;This year the INSPIRE conference is organized as a joint event with the &lt;a href=&#34;http://www.geospatialworldforum.org/&#34;&gt;Geospatial World Forum&lt;/a&gt; in Lisbon.&lt;/p&gt;
 
-&lt;p&gt;As &lt;a href=&#34;/spatialbitz.github.io/blog/post/inspire2014&#34;&gt;last year&lt;/a&gt; I did some text mining on the conference abstracts to get a feeling on this years&amp;rsquo; hot topics and to help me identify sessions/presentations that are particularly interesting.&lt;/p&gt;
+&lt;p&gt;As &lt;a href=&#34;//spatialbitz.github.io/blog/post/inspire2014&#34;&gt;last year&lt;/a&gt; I did some text mining on the conference abstracts to get a feeling on this years&amp;rsquo; hot topics and to help me identify sessions/presentations that are particularly interesting.&lt;/p&gt;
 
 &lt;p&gt;Here are the frequently used terms (&amp;gt; 65):&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/spatialbitz.github.io/blog/img/tf2015.png&#34; alt=&#34;image not found&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;//spatialbitz.github.io/blog/img/tf2015.png&#34; alt=&#34;image not found&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;And this table shows how terms are correlated with the term &amp;ldquo;INSPIRE&amp;rdquo;:&lt;/p&gt;
@@ -918,10 +918,10 @@
     
     <item>
       <title>Topographische Karten und das Urheberrecht</title>
-      <link>/spatialbitz.github.io/blog/post/topographische-karten-und-das-urheberrecht/</link>
+      <link>//spatialbitz.github.io/blog/post/topographische-karten-und-das-urheberrecht/</link>
       <pubDate>Sun, 01 Mar 2015 13:00:38 +0200</pubDate>
       
-      <guid>/spatialbitz.github.io/blog/post/topographische-karten-und-das-urheberrecht/</guid>
+      <guid>//spatialbitz.github.io/blog/post/topographische-karten-und-das-urheberrecht/</guid>
       <description>&lt;p&gt;Die Frage ob (analoge) topographische Karten dem “Leistungsschutz für Datenbanken” aus dem Urheberrecht unterliegen schwelt seit Jahren. Eine (freie) Nachnutzung der amtlichen Daten wäre dabei sowohl für die Wirtschaft als auch für Open Data Initiativen interessant. Diesbezüglich wird es nun zu einer höchstrichterlichen Klärung kommen, da der BGH diese Frage derzeit behandelt und den EuGH um &lt;a href=&#34;http://openjur.de/u/746945.html&#34;&gt;richtlinienkonforme Auslegung gebeten hat&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Fraglich ist in diesem Zusammenhang nicht die Kartendarstellung an sich (also z.B. der Nachdruck des Kartenwerkes), dieser kann - je nach Schöpfungstiefe - nach § 2 (1) UrhG urheberrechtlichen Schutz genießen, sondern um die Nachnutzung der Informationen, die einer Karte entnommen werden. Im Kern geht es bei den Auseinandersetzungen um die Frage, ob analoge topographische Karten Datenbanken nach &lt;a href=&#34;http://www.gesetze-im-internet.de/urhg/__87a.html&#34;&gt;§87a (1) UrhG&lt;/a&gt; darstellen. Dieser setzt Art. 1 (2) der &lt;a href=&#34;http://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:31996L0009&#34;&gt;Richtlinie 96/9/EG&lt;/a&gt; über den rechtlichen Schutz von Datenbanken in nationales Recht um. Er lautet:&lt;/p&gt;
@@ -973,11 +973,11 @@
     
     <item>
       <title>Assigning what3words addresses to OSM buildings</title>
-      <link>/spatialbitz.github.io/blog/post/assigning-what3words-addresses-to-OSM-building/</link>
+      <link>//spatialbitz.github.io/blog/post/assigning-what3words-addresses-to-OSM-building/</link>
       <pubDate>Tue, 16 Dec 2014 13:00:38 +0200</pubDate>
       
-      <guid>/spatialbitz.github.io/blog/post/assigning-what3words-addresses-to-OSM-building/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://what3words.com/&#34;&gt;What3Words&lt;/a&gt; offers multilingual and memorizable addresses for 3x3 meter grid cells on the entire globe (more on this in an earlier &lt;a href=&#34;/spatialbitz.github.io/blog/post/what3words-geocoder-for-geopy&#34;&gt;post&lt;/a&gt;). So with w3w it becomes possible to assign addresses e.g. to buildings even in countries without functioning traditional addressing schemes.&lt;/p&gt;
+      <guid>//spatialbitz.github.io/blog/post/assigning-what3words-addresses-to-OSM-building/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://what3words.com/&#34;&gt;What3Words&lt;/a&gt; offers multilingual and memorizable addresses for 3x3 meter grid cells on the entire globe (more on this in an earlier &lt;a href=&#34;//spatialbitz.github.io/blog/post/what3words-geocoder-for-geopy&#34;&gt;post&lt;/a&gt;). So with w3w it becomes possible to assign addresses e.g. to buildings even in countries without functioning traditional addressing schemes.&lt;/p&gt;
 
 &lt;p&gt;As a demo I assigned addresses to buildings in Sierra Leone, as available in the  &lt;a href=&#34;http://www.openstreetmap.org/#map=8/8.381/-11.886&#34;&gt;OpenStreetMap&lt;/a&gt; database &lt;span style=&#34;font-size: xx-small;&#34;&gt;(open in &lt;a href=&#34;http://cdn.rawgit.com/spatialbitz/6f73b48c953d3f29bde7/raw/6093045ceeba26cd26de5ec441bad0cfe1cc06d2/gistfile1.html&#34;&gt;new window&lt;/a&gt;)&lt;/span&gt;:&lt;/p&gt;
 
@@ -990,10 +990,10 @@
     
     <item>
       <title>What3Words geocoder for geopy</title>
-      <link>/spatialbitz.github.io/blog/post/what3words-geocoder-for-geopy/</link>
+      <link>//spatialbitz.github.io/blog/post/what3words-geocoder-for-geopy/</link>
       <pubDate>Sun, 02 Nov 2014 13:00:38 +0200</pubDate>
       
-      <guid>/spatialbitz.github.io/blog/post/what3words-geocoder-for-geopy/</guid>
+      <guid>//spatialbitz.github.io/blog/post/what3words-geocoder-for-geopy/</guid>
       <description>&lt;p&gt;&lt;em&gt;What3Words&lt;/em&gt; is an innovative, plain simple and multilingual addressing scheme:&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -1001,7 +1001,7 @@
 Each square has been given a 3 word address comprised of 3 words from the dictionary. An example of a w3w address is &lt;strong&gt;gazed.across.like&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;img src=&#34;/spatialbitz.github.io/blog/img/squares-graphic.png&#34; alt=&#34;image not found&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;//spatialbitz.github.io/blog/img/squares-graphic.png&#34; alt=&#34;image not found&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;(source: &lt;a href=&#34;http://what3words.com/about&#34;&gt;What3Words&lt;/a&gt;)&lt;/p&gt;
@@ -1021,10 +1021,10 @@ Each square has been given a 3 word address comprised of 3 words from the dictio
     
     <item>
       <title>Geocoding with python and OSM</title>
-      <link>/spatialbitz.github.io/blog/post/geocoding-with-python-and-OSM/</link>
+      <link>//spatialbitz.github.io/blog/post/geocoding-with-python-and-OSM/</link>
       <pubDate>Mon, 22 Sep 2014 13:00:38 +0200</pubDate>
       
-      <guid>/spatialbitz.github.io/blog/post/geocoding-with-python-and-OSM/</guid>
+      <guid>//spatialbitz.github.io/blog/post/geocoding-with-python-and-OSM/</guid>
       <description>&lt;p&gt;Geocoding is the process of relating implicit location information (such as an address or a the name of a river) to explicit location information in form of geographic coordinates.&lt;/p&gt;
 
 &lt;p&gt;Several companies, e.g. &lt;a href=&#34;https://developers.google.com/maps/documentation/geocoding/&#34;&gt;Google&lt;/a&gt; and &lt;a href=&#34;https://developer.here.com/geocoder&#34;&gt;Nokia/HERE&lt;/a&gt; offer commercial geocoding services/APIs. &lt;a href=&#34;http://wiki.openstreetmap.org/wiki/Nominatim&#34;&gt;Nominatim&lt;/a&gt; i&lt;em&gt;s a tool to search OSM data by name and address and to generate synthetic addresses of OSM points&lt;/em&gt; and hence a geocoder operating on the OSM database.
@@ -1061,10 +1061,10 @@ LINESTRING(7.0094126 51.1325696,7.0093372 51.1324799,7.009245 51.1323739,7.00918
     
     <item>
       <title>Visualizing OSM data with cartodb to aid HOTOSM validation</title>
-      <link>/spatialbitz.github.io/blog/post/vizualizing-osm-data-w-cartodb/</link>
+      <link>//spatialbitz.github.io/blog/post/vizualizing-osm-data-w-cartodb/</link>
       <pubDate>Sat, 06 Sep 2014 13:00:38 +0200</pubDate>
       
-      <guid>/spatialbitz.github.io/blog/post/vizualizing-osm-data-w-cartodb/</guid>
+      <guid>//spatialbitz.github.io/blog/post/vizualizing-osm-data-w-cartodb/</guid>
       <description>&lt;p&gt;Playing around with &lt;a href=&#34;http://cartodb.com/&#34;&gt;cartodb&lt;/a&gt; has been on my list for a while now. Also I started to contribute to &lt;a href=&#34;http://hot.openstreetmap.org/&#34;&gt;HOTOSM&lt;/a&gt; lately. During mapping and validation work for the Ebola related HOTOSM tasks I noticed that in some areas the relevant features are not mapped as expected. Presumably unexperienced mappers map e.g.  buildings as single nodes and/or don&amp;rsquo;t apply the &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Highway_Tag_Africa&#34;&gt;highway tag guidelines for Africa&lt;/a&gt; correctly. As some enthusiastic mappers may work on sparse areas in a short time its difficult track down mistakes and notify the contributor early.
  While josm offers &lt;a href=&#34;https://www.mapbox.com/blog/2012-08-15-using-filters-josm/&#34;&gt;flexible filter functionalities&lt;/a&gt; I find it hard to get a flexible overview of a wider area.&lt;/p&gt;
 
@@ -1100,10 +1100,10 @@ While it is possible with cartodb to import OSM data directly and extract releva
     
     <item>
       <title>Text Mining INSPIRE Conference Contributions</title>
-      <link>/spatialbitz.github.io/blog/post/inspire2014/</link>
+      <link>//spatialbitz.github.io/blog/post/inspire2014/</link>
       <pubDate>Tue, 17 Jun 2014 13:00:38 +0200</pubDate>
       
-      <guid>/spatialbitz.github.io/blog/post/inspire2014/</guid>
+      <guid>//spatialbitz.github.io/blog/post/inspire2014/</guid>
       <description>&lt;p&gt;So the &lt;a href=&#34;http://inspire.ec.europa.eu/events/conferences/inspire_2014/page/home&#34;&gt;INSPIRE Conference 2014&lt;/a&gt; (#inspire_eu2014) starts tomorrow - after two days of intensive workshops.
  For me this poses the challenge to decide which of the parallel sessions I should attend to. As I have been experimenting with the &lt;a href=&#34;http://www.r-project.org/&#34;&gt;R framework&lt;/a&gt; lately I decided to make use of some &lt;a href=&#34;http://cran.r-project.org/web/packages/tm/index.html&#34;&gt;text mining&lt;/a&gt; techniques instead of reading through all the abstracts to get an idea about hot topics, trends and potentially interesting sessions.&lt;/p&gt;
 
@@ -1111,28 +1111,28 @@ While it is possible with cartodb to import OSM data directly and extract releva
 
 &lt;p&gt;To get a first impression I take a  look at terms that appear frequently (15+) in the contribution&amp;rsquo;s titles:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/spatialbitz.github.io/blog/img/tf.png&#34; alt=&#34;image not found&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;//spatialbitz.github.io/blog/img/tf.png&#34; alt=&#34;image not found&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;And the same for terms in the abstracts (150+)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/spatialbitz.github.io/blog/img/tf_abstracts150+.png&#34; alt=&#34;image not found&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;//spatialbitz.github.io/blog/img/tf_abstracts150+.png&#34; alt=&#34;image not found&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Also from the abstracts a nicer looking wordcloud (100+):&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/spatialbitz.github.io/blog/img/wc_abstracts_100+.png&#34; alt=&#34;image not found&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;//spatialbitz.github.io/blog/img/wc_abstracts_100+.png&#34; alt=&#34;image not found&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Now I&amp;rsquo;d like to identify contributions that deal with topics of interest (e.g. &amp;ldquo;benefits&amp;rdquo; (2+), &amp;ldquo;health&amp;rdquo; (1+) or &amp;ldquo;metadata&amp;rdquo; (5+)):&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/spatialbitz.github.io/blog/img/tfBenefits2+.png&#34; alt=&#34;image not found&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;//spatialbitz.github.io/blog/img/tfBenefits2+.png&#34; alt=&#34;image not found&#34; /&gt;
 &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/spatialbitz.github.io/blog/img/tfHealth1+.png&#34; alt=&#34;image not found&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;//spatialbitz.github.io/blog/img/tfHealth1+.png&#34; alt=&#34;image not found&#34; /&gt;
 &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/spatialbitz.github.io/blog/img/tfMetadata5+.png&#34; alt=&#34;image not found&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;//spatialbitz.github.io/blog/img/tfMetadata5+.png&#34; alt=&#34;image not found&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Taken the &amp;lsquo;contribution ID&amp;rsquo; (just the number) I can access the full abstract:&lt;/p&gt;
@@ -1141,7 +1141,7 @@ While it is possible with cartodb to import OSM data directly and extract releva
 
 &lt;p&gt;Besides that the tm-package offers a lot of functionality to analyse the datasets further. For example I can identify terms that are correlated to a specific term. For instance terms that are correlated (0.5+) with &amp;ldquo;wfs&amp;rdquo; (considering all abstracs) are:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/spatialbitz.github.io/blog/img/assocWfs05.png&#34; alt=&#34;image not found&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;//spatialbitz.github.io/blog/img/assocWfs05.png&#34; alt=&#34;image not found&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;So a few words on what I did.&lt;/p&gt;

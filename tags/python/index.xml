@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on Spatialbits </title>
-    <link>/spatialbitz.github.io/blog/tags/python/</link>
+    <link>//spatialbitz.github.io/blog/tags/python/</link>
     <description>Recent content in Python on Spatialbits </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 22 Sep 2014 13:00:38 +0200</lastBuildDate>
-    <atom:link href="/spatialbitz.github.io/blog/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//spatialbitz.github.io/blog/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Geocoding with python and OSM</title>
-      <link>/spatialbitz.github.io/blog/post/geocoding-with-python-and-OSM/</link>
+      <link>//spatialbitz.github.io/blog/post/geocoding-with-python-and-OSM/</link>
       <pubDate>Mon, 22 Sep 2014 13:00:38 +0200</pubDate>
       
-      <guid>/spatialbitz.github.io/blog/post/geocoding-with-python-and-OSM/</guid>
+      <guid>//spatialbitz.github.io/blog/post/geocoding-with-python-and-OSM/</guid>
       <description>&lt;p&gt;Geocoding is the process of relating implicit location information (such as an address or a the name of a river) to explicit location information in form of geographic coordinates.&lt;/p&gt;
 
 &lt;p&gt;Several companies, e.g. &lt;a href=&#34;https://developers.google.com/maps/documentation/geocoding/&#34;&gt;Google&lt;/a&gt; and &lt;a href=&#34;https://developer.here.com/geocoder&#34;&gt;Nokia/HERE&lt;/a&gt; offer commercial geocoding services/APIs. &lt;a href=&#34;http://wiki.openstreetmap.org/wiki/Nominatim&#34;&gt;Nominatim&lt;/a&gt; i&lt;em&gt;s a tool to search OSM data by name and address and to generate synthetic addresses of OSM points&lt;/em&gt; and hence a geocoder operating on the OSM database.
