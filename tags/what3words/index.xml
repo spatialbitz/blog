@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>What3words on Spatialbits </title>
-    <link>spatialbitz.github.io/blog/tags/what3words/</link>
+    <link>/spatialbitz.github.io/blog/tags/what3words/</link>
     <description>Recent content in What3words on Spatialbits </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 22 Jul 2015 13:00:38 +0200</lastBuildDate>
-    <atom:link href="spatialbitz.github.io/blog/tags/what3words/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/spatialbitz.github.io/blog/tags/what3words/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>what3words addresses for OSM buildings</title>
@@ -15,7 +15,7 @@
       <pubDate>Wed, 22 Jul 2015 13:00:38 +0200</pubDate>
       
       <guid>/spatialbitz.github.io/blog/post/what3words-addresses-for-OSM-buildings/</guid>
-      <description>&lt;p&gt;A while ago I &lt;a href=&#34;spatialbitz.github.io/blog/post/assigning-what3words-addresses-to-OSM-building&#34;&gt;experimented&lt;/a&gt; with assigning multilingual &lt;em&gt;what3words&lt;/em&gt; addresses to OpenStreetMap buildings in Sierra Leone.
+      <description>&lt;p&gt;A while ago I &lt;a href=&#34;/spatialbitz.github.io/blog/post/assigning-what3words-addresses-to-OSM-building&#34;&gt;experimented&lt;/a&gt; with assigning multilingual &lt;em&gt;what3words&lt;/em&gt; addresses to OpenStreetMap buildings in Sierra Leone.
  I basically downloaded the OSM data, derived the buildings and their centroids and published a map based on CartoDB. Upon a click the what3words-API was queried for the addresses in multiple languages.&lt;/p&gt;
 
 &lt;p&gt;There are some obvious disadvantages to this approach.&lt;/p&gt;
@@ -57,7 +57,7 @@
       <pubDate>Tue, 16 Dec 2014 13:00:38 +0200</pubDate>
       
       <guid>/spatialbitz.github.io/blog/post/assigning-what3words-addresses-to-OSM-building/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://what3words.com/&#34;&gt;What3Words&lt;/a&gt; offers multilingual and memorizable addresses for 3x3 meter grid cells on the entire globe (more on this in an earlier &lt;a href=&#34;spatialbitz.github.io/blog/post/what3words-geocoder-for-geopy&#34;&gt;post&lt;/a&gt;). So with w3w it becomes possible to assign addresses e.g. to buildings even in countries without functioning traditional addressing schemes.&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;http://what3words.com/&#34;&gt;What3Words&lt;/a&gt; offers multilingual and memorizable addresses for 3x3 meter grid cells on the entire globe (more on this in an earlier &lt;a href=&#34;/spatialbitz.github.io/blog/post/what3words-geocoder-for-geopy&#34;&gt;post&lt;/a&gt;). So with w3w it becomes possible to assign addresses e.g. to buildings even in countries without functioning traditional addressing schemes.&lt;/p&gt;
 
 &lt;p&gt;As a demo I assigned addresses to buildings in Sierra Leone, as available in the  &lt;a href=&#34;http://www.openstreetmap.org/#map=8/8.381/-11.886&#34;&gt;OpenStreetMap&lt;/a&gt; database &lt;span style=&#34;font-size: xx-small;&#34;&gt;(open in &lt;a href=&#34;http://cdn.rawgit.com/spatialbitz/6f73b48c953d3f29bde7/raw/6093045ceeba26cd26de5ec441bad0cfe1cc06d2/gistfile1.html&#34;&gt;new window&lt;/a&gt;)&lt;/span&gt;:&lt;/p&gt;
 
@@ -81,7 +81,7 @@
 Each square has been given a 3 word address comprised of 3 words from the dictionary. An example of a w3w address is &lt;strong&gt;gazed.across.like&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;img src=&#34;spatialbitz.github.io/blog/img/squares-graphic.png&#34; alt=&#34;image not found&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;/spatialbitz.github.io/blog/img/squares-graphic.png&#34; alt=&#34;image not found&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;(source: &lt;a href=&#34;http://what3words.com/about&#34;&gt;What3Words&lt;/a&gt;)&lt;/p&gt;

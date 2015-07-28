@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Geopy on Spatialbits </title>
-    <link>spatialbitz.github.io/blog/tags/geopy/</link>
+    <link>/spatialbitz.github.io/blog/tags/geopy/</link>
     <description>Recent content in Geopy on Spatialbits </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 02 Nov 2014 13:00:38 +0200</lastBuildDate>
-    <atom:link href="spatialbitz.github.io/blog/tags/geopy/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/spatialbitz.github.io/blog/tags/geopy/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>What3Words geocoder for geopy</title>
@@ -22,7 +22,7 @@
 Each square has been given a 3 word address comprised of 3 words from the dictionary. An example of a w3w address is &lt;strong&gt;gazed.across.like&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;img src=&#34;spatialbitz.github.io/blog/img/squares-graphic.png&#34; alt=&#34;image not found&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;/spatialbitz.github.io/blog/img/squares-graphic.png&#34; alt=&#34;image not found&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;(source: &lt;a href=&#34;http://what3words.com/about&#34;&gt;What3Words&lt;/a&gt;)&lt;/p&gt;
