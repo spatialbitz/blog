@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Geopy on Spatialbits </title>
-    <link>blog.spatialbits.de/tags/geopy/</link>
+    <link>//blog.spatialbits.de/tags/geopy/</link>
     <description>Recent content in Geopy on Spatialbits </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 02 Nov 2014 13:00:38 +0200</lastBuildDate>
-    <atom:link href="blog.spatialbits.de/tags/geopy/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//blog.spatialbits.de/tags/geopy/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>What3Words geocoder for geopy</title>
-      <link>/blog.spatialbits.de/post/what3words-geocoder-for-geopy/</link>
+      <link>//blog.spatialbits.de/post/what3words-geocoder-for-geopy/</link>
       <pubDate>Sun, 02 Nov 2014 13:00:38 +0200</pubDate>
       
-      <guid>/blog.spatialbits.de/post/what3words-geocoder-for-geopy/</guid>
+      <guid>//blog.spatialbits.de/post/what3words-geocoder-for-geopy/</guid>
       <description>&lt;p&gt;&lt;em&gt;What3Words&lt;/em&gt; is an innovative, plain simple and multilingual addressing scheme:&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -22,7 +22,7 @@
 Each square has been given a 3 word address comprised of 3 words from the dictionary. An example of a w3w address is &lt;strong&gt;gazed.across.like&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;img src=&#34;blog.spatialbits.de/img/squares-graphic.png&#34; alt=&#34;image not found&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;//blog.spatialbits.de/img/squares-graphic.png&#34; alt=&#34;image not found&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;(source: &lt;a href=&#34;http://what3words.com/about&#34;&gt;What3Words&lt;/a&gt;)&lt;/p&gt;
@@ -42,10 +42,10 @@ Each square has been given a 3 word address comprised of 3 words from the dictio
     
     <item>
       <title>Geocoding with python and OSM</title>
-      <link>/blog.spatialbits.de/post/geocoding-with-python-and-OSM/</link>
+      <link>//blog.spatialbits.de/post/geocoding-with-python-and-OSM/</link>
       <pubDate>Mon, 22 Sep 2014 13:00:38 +0200</pubDate>
       
-      <guid>/blog.spatialbits.de/post/geocoding-with-python-and-OSM/</guid>
+      <guid>//blog.spatialbits.de/post/geocoding-with-python-and-OSM/</guid>
       <description>&lt;p&gt;Geocoding is the process of relating implicit location information (such as an address or a the name of a river) to explicit location information in form of geographic coordinates.&lt;/p&gt;
 
 &lt;p&gt;Several companies, e.g. &lt;a href=&#34;https://developers.google.com/maps/documentation/geocoding/&#34;&gt;Google&lt;/a&gt; and &lt;a href=&#34;https://developer.here.com/geocoder&#34;&gt;Nokia/HERE&lt;/a&gt; offer commercial geocoding services/APIs. &lt;a href=&#34;http://wiki.openstreetmap.org/wiki/Nominatim&#34;&gt;Nominatim&lt;/a&gt; i&lt;em&gt;s a tool to search OSM data by name and address and to generate synthetic addresses of OSM points&lt;/em&gt; and hence a geocoder operating on the OSM database.

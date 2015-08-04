@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Data Science on Spatialbits </title>
-    <link>blog.spatialbits.de/categories/data-science/</link>
+    <link>//blog.spatialbits.de/categories/data-science/</link>
     <description>Recent content in Data Science on Spatialbits </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 22 May 2015 13:00:38 +0200</lastBuildDate>
-    <atom:link href="blog.spatialbits.de/categories/data-science/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//blog.spatialbits.de/categories/data-science/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Text Mining the Geospatial World Forum Contributions</title>
-      <link>/blog.spatialbits.de/post/text-mining-the-geospatial-world-forum-contributions/</link>
+      <link>//blog.spatialbits.de/post/text-mining-the-geospatial-world-forum-contributions/</link>
       <pubDate>Fri, 22 May 2015 13:00:38 +0200</pubDate>
       
-      <guid>/blog.spatialbits.de/post/text-mining-the-geospatial-world-forum-contributions/</guid>
+      <guid>//blog.spatialbits.de/post/text-mining-the-geospatial-world-forum-contributions/</guid>
       <description>&lt;p&gt;This year the INSPIRE conference is organized as a joint event with the &lt;a href=&#34;http://www.geospatialworldforum.org/&#34;&gt;Geospatial World Forum&lt;/a&gt; in Lisbon.&lt;/p&gt;
 
-&lt;p&gt;As &lt;a href=&#34;blog.spatialbits.de/post/inspire2014&#34;&gt;last year&lt;/a&gt; I did some text mining on the conference abstracts to get a feeling on this years&amp;rsquo; hot topics and to help me identify sessions/presentations that are particularly interesting.&lt;/p&gt;
+&lt;p&gt;As &lt;a href=&#34;//blog.spatialbits.de/post/inspire2014&#34;&gt;last year&lt;/a&gt; I did some text mining on the conference abstracts to get a feeling on this years&amp;rsquo; hot topics and to help me identify sessions/presentations that are particularly interesting.&lt;/p&gt;
 
 &lt;p&gt;Here are the frequently used terms (&amp;gt; 65):&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;blog.spatialbits.de/img/tf2015.png&#34; alt=&#34;image not found&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;//blog.spatialbits.de/img/tf2015.png&#34; alt=&#34;image not found&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;And this table shows how terms are correlated with the term &amp;ldquo;INSPIRE&amp;rdquo;:&lt;/p&gt;
@@ -876,10 +876,10 @@
     
     <item>
       <title>Text Mining INSPIRE Conference Contributions</title>
-      <link>/blog.spatialbits.de/post/inspire2014/</link>
+      <link>//blog.spatialbits.de/post/inspire2014/</link>
       <pubDate>Tue, 17 Jun 2014 13:00:38 +0200</pubDate>
       
-      <guid>/blog.spatialbits.de/post/inspire2014/</guid>
+      <guid>//blog.spatialbits.de/post/inspire2014/</guid>
       <description>&lt;p&gt;So the &lt;a href=&#34;http://inspire.ec.europa.eu/events/conferences/inspire_2014/page/home&#34;&gt;INSPIRE Conference 2014&lt;/a&gt; (#inspire_eu2014) starts tomorrow - after two days of intensive workshops.
  For me this poses the challenge to decide which of the parallel sessions I should attend to. As I have been experimenting with the &lt;a href=&#34;http://www.r-project.org/&#34;&gt;R framework&lt;/a&gt; lately I decided to make use of some &lt;a href=&#34;http://cran.r-project.org/web/packages/tm/index.html&#34;&gt;text mining&lt;/a&gt; techniques instead of reading through all the abstracts to get an idea about hot topics, trends and potentially interesting sessions.&lt;/p&gt;
 
@@ -887,28 +887,28 @@
 
 &lt;p&gt;To get a first impression I take a  look at terms that appear frequently (15+) in the contribution&amp;rsquo;s titles:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;blog.spatialbits.de/img/tf.png&#34; alt=&#34;image not found&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;//blog.spatialbits.de/img/tf.png&#34; alt=&#34;image not found&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;And the same for terms in the abstracts (150+)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;blog.spatialbits.de/img/tf_abstracts150+.png&#34; alt=&#34;image not found&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;//blog.spatialbits.de/img/tf_abstracts150+.png&#34; alt=&#34;image not found&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Also from the abstracts a nicer looking wordcloud (100+):&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;blog.spatialbits.de/img/wc_abstracts_100+.png&#34; alt=&#34;image not found&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;//blog.spatialbits.de/img/wc_abstracts_100+.png&#34; alt=&#34;image not found&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Now I&amp;rsquo;d like to identify contributions that deal with topics of interest (e.g. &amp;ldquo;benefits&amp;rdquo; (2+), &amp;ldquo;health&amp;rdquo; (1+) or &amp;ldquo;metadata&amp;rdquo; (5+)):&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;blog.spatialbits.de/img/tfBenefits2+.png&#34; alt=&#34;image not found&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;//blog.spatialbits.de/img/tfBenefits2+.png&#34; alt=&#34;image not found&#34; /&gt;
 &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;blog.spatialbits.de/img/tfHealth1+.png&#34; alt=&#34;image not found&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;//blog.spatialbits.de/img/tfHealth1+.png&#34; alt=&#34;image not found&#34; /&gt;
 &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;blog.spatialbits.de/img/tfMetadata5+.png&#34; alt=&#34;image not found&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;//blog.spatialbits.de/img/tfMetadata5+.png&#34; alt=&#34;image not found&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Taken the &amp;lsquo;contribution ID&amp;rsquo; (just the number) I can access the full abstract:&lt;/p&gt;
@@ -917,7 +917,7 @@
 
 &lt;p&gt;Besides that the tm-package offers a lot of functionality to analyse the datasets further. For example I can identify terms that are correlated to a specific term. For instance terms that are correlated (0.5+) with &amp;ldquo;wfs&amp;rdquo; (considering all abstracs) are:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;blog.spatialbits.de/img/assocWfs05.png&#34; alt=&#34;image not found&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;//blog.spatialbits.de/img/assocWfs05.png&#34; alt=&#34;image not found&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;So a few words on what I did.&lt;/p&gt;
