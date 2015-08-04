@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cartodb on Spatialbits </title>
-    <link>//blog.spatialbits.de/tags/cartodb/</link>
+    <link>blog.spatialbits.de/tags/cartodb/</link>
     <description>Recent content in Cartodb on Spatialbits </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 06 Sep 2014 13:00:38 +0200</lastBuildDate>
-    <atom:link href="//blog.spatialbits.de/tags/cartodb/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="blog.spatialbits.de/tags/cartodb/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Visualizing OSM data with cartodb to aid HOTOSM validation</title>
-      <link>//blog.spatialbits.de/post/vizualizing-osm-data-w-cartodb/</link>
+      <link>/blog.spatialbits.de/post/vizualizing-osm-data-w-cartodb/</link>
       <pubDate>Sat, 06 Sep 2014 13:00:38 +0200</pubDate>
       
-      <guid>//blog.spatialbits.de/post/vizualizing-osm-data-w-cartodb/</guid>
+      <guid>/blog.spatialbits.de/post/vizualizing-osm-data-w-cartodb/</guid>
       <description>&lt;p&gt;Playing around with &lt;a href=&#34;http://cartodb.com/&#34;&gt;cartodb&lt;/a&gt; has been on my list for a while now. Also I started to contribute to &lt;a href=&#34;http://hot.openstreetmap.org/&#34;&gt;HOTOSM&lt;/a&gt; lately. During mapping and validation work for the Ebola related HOTOSM tasks I noticed that in some areas the relevant features are not mapped as expected. Presumably unexperienced mappers map e.g.  buildings as single nodes and/or don&amp;rsquo;t apply the &lt;a href=&#34;https://wiki.openstreetmap.org/wiki/Highway_Tag_Africa&#34;&gt;highway tag guidelines for Africa&lt;/a&gt; correctly. As some enthusiastic mappers may work on sparse areas in a short time its difficult track down mistakes and notify the contributor early.
  While josm offers &lt;a href=&#34;https://www.mapbox.com/blog/2012-08-15-using-filters-josm/&#34;&gt;flexible filter functionalities&lt;/a&gt; I find it hard to get a flexible overview of a wider area.&lt;/p&gt;
 
