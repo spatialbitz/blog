@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Publish OpenGeoData -- Spatialbits </title>
+
+    
+
+    
+    <link href="//blog.spatialbits.de//css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link href="//blog.spatialbits.de//css/clean-blog.min.css" rel="stylesheet">
+
+    
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <link href="//blog.spatialbits.de/img/favicon.ico" rel="icon">
+
+    
+    
+    
+
+</head>
+
+<body>
+
+    
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="//blog.spatialbits.de/">Spatialbits </a>
+            </div>
+
+                       
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li>
+                        <a href="//blog.spatialbits.de/">home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="//blog.spatialbits.de/post/">Archives</a>
+                    </li>
+                    
+                  </ul>
+            </div>
+           
+
+        </div>
+        
+    </nav>
+
+
+    
+    
+    <header class="intro-header" style="background-image: url('//blog.spatialbits.de//img/post-bg.jpg')">
+    
+      <div class="container">
+        <div class="row">
+           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+             <div class="post-heading">
+               <h1>Publish OpenGeoData</h1>
+               <h2 class="subheading"></h2>
+               <span class="meta">Posted by <a href="#">Martin Seiler</a> on Fri, Aug 14, 2015
+                 <br />
+                 In <a href="//blog.spatialbits.de/categories/gi" >GI</a>, <a href="//blog.spatialbits.de/categories/opendata" >OpenData</a>, <a href="//blog.spatialbits.de/categories/en" >EN</a>, 
+
+                 <br />
+                 Tags <a href="//blog.spatialbits.de/tags/mapbox" >mapbox</a> <a href="//blog.spatialbits.de/tags/github" >github</a> 
+
+               </span>
+             </div>
+           </div>
+        </div>
+      </div>
+    </header>
+
+    
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  
+
+<p>The availability of data under open licenses keeps increasing. Many data sets in open data portals are actually spatial data, i.e. each item has a direct (or indirect) spatial reference (usually lat/lon coordinates). Nowadays there are tools freely available to publish this OpenGeoData on maps.</p>
+
+<p>No coding required. Hosting included.</p>
+
+<p>The liaison of <a href="https://www.mapbox.com/">Mapbox</a> and <a href="https://github.com/">GitHub</a> make it possible.</p>
+
+<p>I&rsquo;d like to show you a little example.</p>
+
+<h3 id="finding-suitable-data-the-hardest-part:2b36bf504928238d74bb00ee791dfb23">Finding suitable data (the hardest part&hellip;)</h3>
+
+<p>First we have to find open data sets with a spatial reference. I tried my luck with <a href="https://www.govdata.de/">GovData</a> - the German Open Data Portal. They offer a filter for data formats. Look out for files that come as geojson, kml, kmz, shp.</p>
+
+<p>Hints:</p>
+
+<ul>
+<li>you want to try this approach with small data sets, otherwise it might kill your browser&hellip;)</li>
+<li>it seems like a lot of the published files come with corrupt geojson, try other formats too, if you have problems</li>
+</ul>
+
+<p>I found <a href="https://www.govdata.de/suchen/-/details/behindertenparkplaetze-koeln-k">this</a> data set about parking lots suitable for disabled people in Cologne and downloaded the kmz-file (CC-BY, &ldquo;Stadt Köln&rdquo;).
+The kmz-format is practically a compressed kml-file. So use your favorite tool to uncompress it (for me <code>unzip STR.Behindertenparkplatz.kmz</code> does the trick on the command line).</p>
+
+<h3 id="getting-the-data-on-a-map:2b36bf504928238d74bb00ee791dfb23">Getting the data on a map</h3>
+
+<ol>
+<li>Go to <a href="http://geojson.io">http://geojson.io</a></li>
+<li>Click <code>Open</code>, <code>File</code> and select your kml-file</li>
+</ol>
+
+<p>This should upload your data, transform it to geojson and display it on the map.
+Now you can edit the data if you like or add additional features. You can either click on a map item and edit the feature there, or directly edit stuff in the geojson code on the right. E.g. try to change the color of the marker.</p>
+
+<p>Your map is ready? Let&rsquo;s get it out there&hellip;</p>
+
+<h3 id="publish-your-map:2b36bf504928238d74bb00ee791dfb23">Publish your map</h3>
+
+<p>Whenever you&rsquo;re satisfied with your map, click on <code>Save</code> and select <code>Gist</code>.
+Note that the message right of the menu changes from &ldquo;unsaved&rdquo; to something like &ldquo;anonymous/d56dbf9d7028f00375c7&rdquo;. Next: click on the Octocat logo just left of this.</p>
+
+<p><em>Et voilà</em> a new tab opens that renders your map nicely on GitHub <a href="https://gist.github.com/anonymous/d56dbf9d7028f00375c7">https://gist.github.com/anonymous/d56dbf9d7028f00375c7</a>.</p>
+
+<p>Now, if you want to see just your map using the whole screen, you can refer to it by putting <code>https://render.githubusercontent.com/view/geojson?url=</code> in front of the git URL <em>of the raw file</em>.
+You get that by clicking on ´Raw´ above the map on GitHub.</p>
+
+<p>So you end up with something like:</p>
+
+<p><a href="https://render.githubusercontent.com/view/geojson?url=https://gist.githubusercontent.com/anonymous/d56dbf9d7028f00375c7/raw/c3e96a71ad9e932c70d480d54efcde0b4c96b9f5/map.geojson">https://render.githubusercontent.com/view/geojson?url=https://gist.githubusercontent.com/anonymous/d56dbf9d7028f00375c7/raw/c3e96a71ad9e932c70d480d54efcde0b4c96b9f5/map.geojson</a></p>
+
+<p>If you&rsquo;d like to use it within a webpage, just add the following line to your html-file:</p>
+
+<p><code>&lt;script src=&quot;https://gist.github.com/anonymous/d56dbf9d7028f00375c7.js&quot;&gt;&lt;/script&gt;
+</code></p>
+
+<script src="https://gist.github.com/anonymous/d56dbf9d7028f00375c7.js"></script>
+ 
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost") 
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'spatialbitsblog';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the comments powered by <a href="http://disqus.com/?ref_noscript">Disqus.</a></noscript>
+
+
+    <hr>
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <ul class="list-inline text-center">
+                    <li>
+                      <a href="mailto:spatialbits@posteo.net">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://twitter.com/spatialbits">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href="https://github.com/spatialbitz">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                        </span>
+                      </a>
+                    </li>
+                    
+                  </ul>
+                  <p class="copyright text-muted"></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="//blog.spatialbits.de//js/jquery.min.js"></script>
+
+    
+    <script src="//blog.spatialbits.de//js/bootstrap.min.js"></script>
+
+    
+    <script src="//blog.spatialbits.de//js/clean-blog.js"></script>
+
+    
+
+<script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(100866133); }catch(e){}</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100866133ns.gif" /></p></noscript>
+
+</body>
+
+</html>
+

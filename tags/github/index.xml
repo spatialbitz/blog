@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Github on Spatialbits </title>
+    <link>//blog.spatialbits.de/tags/github/</link>
+    <description>Recent content in Github on Spatialbits </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 14 Aug 2015 13:00:38 +0200</lastBuildDate>
+    <atom:link href="//blog.spatialbits.de/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Publish OpenGeoData</title>
+      <link>//blog.spatialbits.de/post/publish-opengeodata/</link>
+      <pubDate>Fri, 14 Aug 2015 13:00:38 +0200</pubDate>
+      
+      <guid>//blog.spatialbits.de/post/publish-opengeodata/</guid>
+      <description>
+
+&lt;p&gt;The availability of data under open licenses keeps increasing. Many data sets in open data portals are actually spatial data, i.e. each item has a direct (or indirect) spatial reference (usually lat/lon coordinates). Nowadays there are tools freely available to publish this OpenGeoData on maps.&lt;/p&gt;
+
+&lt;p&gt;No coding required. Hosting included.&lt;/p&gt;
+
+&lt;p&gt;The liaison of &lt;a href=&#34;https://www.mapbox.com/&#34;&gt;Mapbox&lt;/a&gt; and &lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt; make it possible.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;d like to show you a little example.&lt;/p&gt;
+
+&lt;h3 id=&#34;finding-suitable-data-the-hardest-part:2b36bf504928238d74bb00ee791dfb23&#34;&gt;Finding suitable data (the hardest part&amp;hellip;)&lt;/h3&gt;
+
+&lt;p&gt;First we have to find open data sets with a spatial reference. I tried my luck with &lt;a href=&#34;https://www.govdata.de/&#34;&gt;GovData&lt;/a&gt; - the German Open Data Portal. They offer a filter for data formats. Look out for files that come as geojson, kml, kmz, shp.&lt;/p&gt;
+
+&lt;p&gt;Hints:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;you want to try this approach with small data sets, otherwise it might kill your browser&amp;hellip;)&lt;/li&gt;
+&lt;li&gt;it seems like a lot of the published files come with corrupt geojson, try other formats too, if you have problems&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I found &lt;a href=&#34;https://www.govdata.de/suchen/-/details/behindertenparkplaetze-koeln-k&#34;&gt;this&lt;/a&gt; data set about parking lots suitable for disabled people in Cologne and downloaded the kmz-file (CC-BY, &amp;ldquo;Stadt Köln&amp;rdquo;).
+The kmz-format is practically a compressed kml-file. So use your favorite tool to uncompress it (for me &lt;code&gt;unzip STR.Behindertenparkplatz.kmz&lt;/code&gt; does the trick on the command line).&lt;/p&gt;
+
+&lt;h3 id=&#34;getting-the-data-on-a-map:2b36bf504928238d74bb00ee791dfb23&#34;&gt;Getting the data on a map&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Go to &lt;a href=&#34;http://geojson.io&#34;&gt;http://geojson.io&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Click &lt;code&gt;Open&lt;/code&gt;, &lt;code&gt;File&lt;/code&gt; and select your kml-file&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This should upload your data, transform it to geojson and display it on the map.
+Now you can edit the data if you like or add additional features. You can either click on a map item and edit the feature there, or directly edit stuff in the geojson code on the right. E.g. try to change the color of the marker.&lt;/p&gt;
+
+&lt;p&gt;Your map is ready? Let&amp;rsquo;s get it out there&amp;hellip;&lt;/p&gt;
+
+&lt;h3 id=&#34;publish-your-map:2b36bf504928238d74bb00ee791dfb23&#34;&gt;Publish your map&lt;/h3&gt;
+
+&lt;p&gt;Whenever you&amp;rsquo;re satisfied with your map, click on &lt;code&gt;Save&lt;/code&gt; and select &lt;code&gt;Gist&lt;/code&gt;.
+Note that the message right of the menu changes from &amp;ldquo;unsaved&amp;rdquo; to something like &amp;ldquo;anonymous/d56dbf9d7028f00375c7&amp;rdquo;. Next: click on the Octocat logo just left of this.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Et voilà&lt;/em&gt; a new tab opens that renders your map nicely on GitHub &lt;a href=&#34;https://gist.github.com/anonymous/d56dbf9d7028f00375c7&#34;&gt;https://gist.github.com/anonymous/d56dbf9d7028f00375c7&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now, if you want to see just your map using the whole screen, you can refer to it by putting &lt;code&gt;https://render.githubusercontent.com/view/geojson?url=&lt;/code&gt; in front of the git URL &lt;em&gt;of the raw file&lt;/em&gt;.
+You get that by clicking on ´Raw´ above the map on GitHub.&lt;/p&gt;
+
+&lt;p&gt;So you end up with something like:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://render.githubusercontent.com/view/geojson?url=https://gist.githubusercontent.com/anonymous/d56dbf9d7028f00375c7/raw/c3e96a71ad9e932c70d480d54efcde0b4c96b9f5/map.geojson&#34;&gt;https://render.githubusercontent.com/view/geojson?url=https://gist.githubusercontent.com/anonymous/d56dbf9d7028f00375c7/raw/c3e96a71ad9e932c70d480d54efcde0b4c96b9f5/map.geojson&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;d like to use it within a webpage, just add the following line to your html-file:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;script src=&amp;quot;https://gist.github.com/anonymous/d56dbf9d7028f00375c7.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;script src=&#34;https://gist.github.com/anonymous/d56dbf9d7028f00375c7.js&#34;&gt;&lt;/script&gt;
+ 
+</description>
+    </item>
+    
+  </channel>
+</rss>
